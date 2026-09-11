@@ -1,0 +1,346 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Portafolio Profesional - Diseño de Moda">
+  <Navbar />
+
+  <main class="flex-1">
+
+    <!-- HERO -->
+    <section id="inicio" class="relative min-h-screen flex items-center overflow-hidden">
+      <div class="absolute inset-0">
+        <img 
+          src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=1920&q=80" 
+          alt="Fashion design workspace" 
+          class="w-full h-full object-cover"
+          loading="eager"
+        />
+        <div class="absolute inset-0 bg-gradient-to-r from-[#2D2D2D]/95 via-[#2D2D2D]/80 to-[#2D2D2D]/60"></div>
+      </div>
+
+      <div class="relative z-10 max-w-6xl mx-auto px-6 py-20 w-full">
+        <div class="max-w-2xl">
+          <div class="flex items-center gap-3 mb-6">
+            <div class="w-12 h-[2px] bg-[#D4C5B5]"></div>
+            <p class="text-[#D4C5B5] font-['Inter'] text-xs tracking-[0.4em] uppercase">Estudiante de Diseño de Modas</p>
+          </div>
+          
+          <h1 class="font-['Playfair_Display'] text-5xl md:text-7xl lg:text-8xl font-bold text-white leading-[0.95] mb-8">
+            Creando
+            <span class="block text-[#D4C5B5] italic">Moda</span>
+            <span class="block">con Identidad</span>
+          </h1>
+          
+          <p class="text-[#D4C5B5]/70 text-lg leading-relaxed mb-10 max-w-lg">
+            Apasionada por el diseño, el patronaje y la creación de propuestas de vestuario que fusionan creatividad, funcionalidad y tendencia.
+          </p>
+          
+          <div class="flex flex-wrap gap-4">
+            <a href="#sobre-mi" class="group px-8 py-4 bg-[#8B7355] text-white font-medium rounded-full hover:bg-[#D4C5B5] hover:text-[#2D2D2D] transition-all duration-500 flex items-center gap-2">
+              Conóceme
+              <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </a>
+            <a href="#competencias" class="px-8 py-4 border border-white/30 text-white font-medium rounded-full hover:bg-white/10 transition-all duration-500">
+              Ver habilidades
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll indicator -->
+      <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2">
+        <span class="text-white/50 text-xs tracking-widest uppercase">Scroll</span>
+        <div class="w-[1px] h-12 bg-gradient-to-b from-white/50 to-transparent animate-pulse"></div>
+      </div>
+    </section>
+
+    <!-- SOBRE MÍ -->
+    <section id="sobre-mi" class="py-32 px-6 bg-[#FAF8F5]">
+      <div class="max-w-6xl mx-auto">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+          <!-- Imagen -->
+          <div class="relative">
+            <div class="aspect-[4/5] rounded-3xl overflow-hidden">
+              <img 
+                src="https://images.unsplash.com/photo-1556905055-8f358a7a47b2?w=800&q=80" 
+                alt="Fashion designer at work" 
+                class="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                loading="lazy"
+              />
+            </div>
+            <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-[#E8E0D8] rounded-2xl -z-10"></div>
+            <div class="absolute -top-6 -left-6 w-24 h-24 border-2 border-[#8B7355] rounded-2xl -z-10"></div>
+          </div>
+
+          <!-- Contenido -->
+          <div>
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-12 h-[2px] bg-[#8B7355]"></div>
+              <p class="text-[#8B7355] font-['Inter'] text-xs tracking-[0.3em] uppercase">Mi historia</p>
+            </div>
+            
+            <h2 class="font-['Playfair_Display'] text-4xl md:text-5xl font-bold text-[#2D2D2D] mb-8">
+              Sobre <span class="italic text-[#8B7355]">Mí</span>
+            </h2>
+            
+            <p class="text-[#5C4A3A] text-lg leading-relaxed mb-6">
+              Soy estudiante de Diseño de Modas, interesada en desarrollar mi creatividad y fortalecer mis conocimientos técnicos en el diseño, patronaje y confección de prendas.
+            </p>
+            <p class="text-[#5C4A3A] text-lg leading-relaxed mb-8">
+              Mi área de interés profesional se enfoca en el diseño de moda femenina, la creación de colecciones, la investigación de tendencias y el desarrollo de propuestas inspiradas en las necesidades y tendencias actuales.
+            </p>
+
+            <!-- Tags -->
+            <div class="flex flex-wrap gap-3 mb-10">
+              <span class="px-5 py-2.5 bg-[#E8E0D8] text-[#5C4A3A] text-sm rounded-full border border-[#D4C5B5]">Diseño de Moda</span>
+              <span class="px-5 py-2.5 bg-[#E8E0D8] text-[#5C4A3A] text-sm rounded-full border border-[#D4C5B5]">Patronaje</span>
+              <span class="px-5 py-2.5 bg-[#E8E0D8] text-[#5C4A3A] text-sm rounded-full border border-[#D4C5B5]">Confección</span>
+              <span class="px-5 py-2.5 bg-[#E8E0D8] text-[#5C4A3A] text-sm rounded-full border border-[#D4C5B5]">Tendencias</span>
+            </div>
+
+            <!-- Stats -->
+            <div class="grid grid-cols-3 gap-6">
+              <div class="text-center p-4 bg-white rounded-2xl border border-[#D4C5B5]/50">
+                <p class="font-['Playfair_Display'] text-3xl font-bold text-[#8B7355]">10+</p>
+                <p class="text-xs text-[#5C4A3A] mt-1">Habilidades</p>
+              </div>
+              <div class="text-center p-4 bg-white rounded-2xl border border-[#D4C5B5]/50">
+                <p class="font-['Playfair_Display'] text-3xl font-bold text-[#8B7355]">5+</p>
+                <p class="text-xs text-[#5C4A3A] mt-1">Herramientas</p>
+              </div>
+              <div class="text-center p-4 bg-white rounded-2xl border border-[#D4C5B5]/50">
+                <p class="font-['Playfair_Display'] text-3xl font-bold text-[#8B7355]">&#8734;</p>
+                <p class="text-xs text-[#5C4A3A] mt-1">Pasión</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMPETENCIAS -->
+    <section id="competencias" class="py-32 px-6 bg-[#2D2D2D]">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-20">
+          <div class="flex items-center justify-center gap-3 mb-4">
+            <div class="w-12 h-[2px] bg-[#D4C5B5]"></div>
+            <p class="text-[#D4C5B5] font-['Inter'] text-xs tracking-[0.3em] uppercase">Lo que sé hacer</p>
+            <div class="w-12 h-[2px] bg-[#D4C5B5]"></div>
+          </div>
+          <h2 class="font-['Playfair_Display'] text-4xl md:text-5xl font-bold text-white">
+            Competencias <span class="italic text-[#D4C5B5]">&</span> Herramientas
+          </h2>
+        </div>
+
+        <!-- Habilidades Blandas -->
+        <div class="mb-20">
+          <h3 class="font-['Playfair_Display'] text-2xl font-semibold text-white mb-10 text-center">Habilidades</h3>
+          <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+            <div class="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 text-center hover:bg-[#8B7355] transition-all duration-500 hover:border-[#8B7355] hover:-translate-y-2">
+              <div class="text-3xl mb-3 group-hover:scale-110 transition-transform">&#128170;</div>
+              <p class="text-sm font-medium text-white/80 group-hover:text-white">Creatividad</p>
+            </div>
+            <div class="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 text-center hover:bg-[#8B7355] transition-all duration-500 hover:border-[#8B7355] hover:-translate-y-2">
+              <div class="text-3xl mb-3 group-hover:scale-110 transition-transform">&#9998;</div>
+              <p class="text-sm font-medium text-white/80 group-hover:text-white">Dibujo</p>
+            </div>
+            <div class="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 text-center hover:bg-[#8B7355] transition-all duration-500 hover:border-[#8B7355] hover:-translate-y-2">
+              <div class="text-3xl mb-3 group-hover:scale-110 transition-transform">&#127912;</div>
+              <p class="text-sm font-medium text-white/80 group-hover:text-white">Moodboards</p>
+            </div>
+            <div class="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 text-center hover:bg-[#8B7355] transition-all duration-500 hover:border-[#8B7355] hover:-translate-y-2">
+              <div class="text-3xl mb-3 group-hover:scale-110 transition-transform">&#127752;</div>
+              <p class="text-sm font-medium text-white/80 group-hover:text-white">Color</p>
+            </div>
+            <div class="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 text-center hover:bg-[#8B7355] transition-all duration-500 hover:border-[#8B7355] hover:-translate-y-2">
+              <div class="text-3xl mb-3 group-hover:scale-110 transition-transform">&#9986;</div>
+              <p class="text-sm font-medium text-white/80 group-hover:text-white">Patronaje</p>
+            </div>
+            <div class="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 text-center hover:bg-[#8B7355] transition-all duration-500 hover:border-[#8B7355] hover:-translate-y-2">
+              <div class="text-3xl mb-3 group-hover:scale-110 transition-transform">&#128736;</div>
+              <p class="text-sm font-medium text-white/80 group-hover:text-white">Confección</p>
+            </div>
+            <div class="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 text-center hover:bg-[#8B7355] transition-all duration-500 hover:border-[#8B7355] hover:-translate-y-2">
+              <div class="text-3xl mb-3 group-hover:scale-110 transition-transform">&#128269;</div>
+              <p class="text-sm font-medium text-white/80 group-hover:text-white">Tendencias</p>
+            </div>
+            <div class="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 text-center hover:bg-[#8B7355] transition-all duration-500 hover:border-[#8B7355] hover:-translate-y-2">
+              <div class="text-3xl mb-3 group-hover:scale-110 transition-transform">&#127912;</div>
+              <p class="text-sm font-medium text-white/80 group-hover:text-white">Conceptos</p>
+            </div>
+            <div class="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 text-center hover:bg-[#8B7355] transition-all duration-500 hover:border-[#8B7355] hover:-translate-y-2">
+              <div class="text-3xl mb-3 group-hover:scale-110 transition-transform">&#128065;</div>
+              <p class="text-sm font-medium text-white/80 group-hover:text-white">Detalle</p>
+            </div>
+            <div class="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 text-center hover:bg-[#8B7355] transition-all duration-500 hover:border-[#8B7355] hover:-translate-y-2">
+              <div class="text-3xl mb-3 group-hover:scale-110 transition-transform">&#128172;</div>
+              <p class="text-sm font-medium text-white/80 group-hover:text-white">Comunicación</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Herramientas Digitales -->
+        <div>
+          <h3 class="font-['Playfair_Display'] text-2xl font-semibold text-white mb-10 text-center">Herramientas Digitales</h3>
+          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl p-8 hover:bg-gradient-to-b hover:from-[#8B7355] hover:to-[#5C4A3A] transition-all duration-500 hover:border-transparent">
+              <div class="w-14 h-14 bg-gradient-to-br from-[#D4C5B5] to-[#8B7355] rounded-2xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+                <svg class="w-7 h-7 text-white" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                </svg>
+              </div>
+              <h4 class="font-semibold text-white text-lg mb-2">Canva</h4>
+              <p class="text-xs text-[#D4C5B5] uppercase tracking-wider mb-3">Diseño gráfico</p>
+              <p class="text-sm text-white/70 leading-relaxed">Elaboración de moodboards, presentaciones y materiales visuales para proyectos de moda.</p>
+            </div>
+
+            <div class="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl p-8 hover:bg-gradient-to-b hover:from-[#8B7355] hover:to-[#5C4A3A] transition-all duration-500 hover:border-transparent">
+              <div class="w-14 h-14 bg-gradient-to-br from-[#D4C5B5] to-[#8B7355] rounded-2xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+                <svg class="w-7 h-7 text-white" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.08 3.15 9.42 7.6 11.18-.1-.95-.2-2.4.04-3.44.22-.94 1.4-5.94 1.4-5.94s-.36-.71-.36-1.77c0-1.66.96-2.9 2.16-2.9 1.02 0 1.51.77 1.51 1.68 0 1.03-.65 2.56-.99 3.98-.28 1.19.6 2.16 1.77 2.16 2.13 0 3.77-2.25 3.77-5.49 0-2.87-2.06-4.87-5-4.87-3.41 0-5.41 2.56-5.41 5.2 0 1.03.4 2.13.89 2.73.1.12.11.22.08.34-.09.37-.29 1.19-.33 1.36-.05.22-.18.27-.41.16-1.52-.71-2.47-2.93-2.47-4.72 0-3.84 2.79-7.37 8.03-7.37 4.21 0 7.49 3 7.49 7 0 4.18-2.63 7.54-6.28 7.54-1.23 0-2.38-.64-2.77-1.39l-.76 2.88c-.27 1.06-1.01 2.4-1.51 3.21C9.58 23.81 10.77 24 12 24c6.63 0 12-5.37 12-12S18.63 0 12 0z"/>
+                </svg>
+              </div>
+              <h4 class="font-semibold text-white text-lg mb-2">Pinterest</h4>
+              <p class="text-xs text-[#D4C5B5] uppercase tracking-wider mb-3">Inspiración</p>
+              <p class="text-sm text-white/70 leading-relaxed">Búsqueda de referencias, tendencias e inspiración para diseños y colecciones.</p>
+            </div>
+
+            <div class="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl p-8 hover:bg-gradient-to-b hover:from-[#8B7355] hover:to-[#5C4A3A] transition-all duration-500 hover:border-transparent">
+              <div class="w-14 h-14 bg-gradient-to-br from-[#D4C5B5] to-[#8B7355] rounded-2xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+                <svg class="w-7 h-7 text-white" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053H12.48z"/>
+                </svg>
+              </div>
+              <h4 class="font-semibold text-white text-lg mb-2">Google Trends</h4>
+              <p class="text-xs text-[#D4C5B5] uppercase tracking-wider mb-3">Análisis</p>
+              <p class="text-sm text-white/70 leading-relaxed">Investigación de tendencias actuales y búsquedas populares en la industria.</p>
+            </div>
+
+            <div class="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl p-8 hover:bg-gradient-to-b hover:from-[#8B7355] hover:to-[#5C4A3A] transition-all duration-500 hover:border-transparent">
+              <div class="w-14 h-14 bg-gradient-to-br from-[#D4C5B5] to-[#8B7355] rounded-2xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+                <svg class="w-7 h-7 text-white" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                </svg>
+              </div>
+              <h4 class="font-semibold text-white text-lg mb-2">Instagram</h4>
+              <p class="text-xs text-[#D4C5B5] uppercase tracking-wider mb-3">Red social</p>
+              <p class="text-sm text-white/70 leading-relaxed">Tendencias, propuestas y portafolio visual para comunicar diseños.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROYECCIÓN PROFESIONAL -->
+    <section id="proyeccion" class="py-32 px-6 bg-[#FAF8F5] relative overflow-hidden">
+      <div class="absolute top-0 right-0 w-96 h-96 bg-[#E8E0D8] rounded-full blur-[150px] opacity-50"></div>
+      <div class="absolute bottom-0 left-0 w-96 h-96 bg-[#D4C5B5] rounded-full blur-[150px] opacity-30"></div>
+      
+      <div class="max-w-6xl mx-auto relative z-10">
+        <div class="text-center mb-20">
+          <div class="flex items-center justify-center gap-3 mb-4">
+            <div class="w-12 h-[2px] bg-[#8B7355]"></div>
+            <p class="text-[#8B7355] font-['Inter'] text-xs tracking-[0.3em] uppercase">Mi futuro</p>
+            <div class="w-12 h-[2px] bg-[#8B7355]"></div>
+          </div>
+          <h2 class="font-['Playfair_Display'] text-4xl md:text-5xl font-bold text-[#2D2D2D]">
+            Proyección <span class="italic text-[#8B7355]">Profesional</span>
+          </h2>
+        </div>
+
+        <!-- Objetivo Principal -->
+        <div class="relative mb-16 rounded-3xl overflow-hidden">
+          <img 
+            src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1200&q=80" 
+            alt="Fashion store" 
+            class="w-full h-80 md:h-96 object-cover"
+            loading="lazy"
+          />
+          <div class="absolute inset-0 bg-gradient-to-r from-[#2D2D2D] via-[#2D2D2D]/90 to-transparent flex items-center">
+            <div class="p-8 md:p-12 max-w-xl">
+              <p class="text-[#D4C5B5] text-sm tracking-[0.2em] uppercase mb-3">Mi Objetivo</p>
+              <p class="font-['Playfair_Display'] text-2xl md:text-3xl text-white leading-relaxed">
+                Convertirme en una diseñadora de modas <span class="text-[#D4C5B5] italic">creativa, innovadora y responsable</span>, especializada en el diseño y desarrollo de prendas y colecciones con una identidad propia.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Metas -->
+        <div class="grid md:grid-cols-3 gap-8 mb-16">
+          <div class="group bg-white rounded-3xl p-8 border border-[#D4C5B5]/30 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
+            <div class="w-16 h-16 bg-gradient-to-br from-[#E8E0D8] to-[#D4C5B5] rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+              <span class="text-3xl">&#128218;</span>
+            </div>
+            <h3 class="font-['Playfair_Display'] text-xl font-semibold text-[#2D2D2D] mb-3">Formación Técnica</h3>
+            <p class="text-sm text-[#5C4A3A] leading-relaxed">Fortalecer conocimientos en patronaje, confección, diseño y herramientas digitales para la industria de la moda.</p>
+          </div>
+          
+          <div class="group bg-white rounded-3xl p-8 border border-[#D4C5B5]/30 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
+            <div class="w-16 h-16 bg-gradient-to-br from-[#E8E0D8] to-[#D4C5B5] rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+              <span class="text-3xl">&#10024;</span>
+            </div>
+            <h3 class="font-['Playfair_Display'] text-xl font-semibold text-[#2D2D2D] mb-3">Identidad Creativa</h3>
+            <p class="text-sm text-[#5C4A3A] leading-relaxed">Explorar y definir un estilo personal que me diferencie y me posicione en la industria de la moda.</p>
+          </div>
+          
+          <div class="group bg-white rounded-3xl p-8 border border-[#D4C5B5]/30 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
+            <div class="w-16 h-16 bg-gradient-to-br from-[#E8E0D8] to-[#D4C5B5] rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+              <span class="text-3xl">&#127942;</span>
+            </div>
+            <h3 class="font-['Playfair_Display'] text-xl font-semibold text-[#2D2D2D] mb-3">Marca Propia</h3>
+            <p class="text-sm text-[#5C4A3A] leading-relaxed">Desarrollar una marca de moda con propuestas innovadoras, funcionales y con identidad propia.</p>
+          </div>
+        </div>
+
+        <!-- Identidad Digital -->
+        <div class="bg-[#2D2D2D] rounded-3xl p-8 md:p-12">
+          <h3 class="font-['Playfair_Display'] text-2xl font-semibold text-white mb-8 text-center">Identidad Digital Responsable</h3>
+          <div class="grid md:grid-cols-3 gap-8">
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 bg-[#8B7355] rounded-full flex items-center justify-center flex-shrink-0">
+                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+              </div>
+              <div>
+                <p class="text-white font-medium mb-1">Protección de datos</p>
+                <p class="text-sm text-[#D4C5B5]/70">Cuidado con la información personal que comparto públicamente.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 bg-[#8B7355] rounded-full flex items-center justify-center flex-shrink-0">
+                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+              </div>
+              <div>
+                <p class="text-white font-medium mb-1">Perfil profesional</p>
+                <p class="text-sm text-[#D4C5B5]/70">Imágenes y contenido apropiado para mi desarrollo profesional.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 bg-[#8B7355] rounded-full flex items-center justify-center flex-shrink-0">
+                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+              </div>
+              <div>
+                <p class="text-white font-medium mb-1">Contenido relevante</p>
+                <p class="text-sm text-[#D4C5B5]/70">Compartir únicamente información relevante para mi carrera.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <Footer />
+</Layout>
