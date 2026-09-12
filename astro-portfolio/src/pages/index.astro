@@ -13,9 +13,10 @@ import Footer from '../components/Footer.astro';
     <section id="inicio" class="relative min-h-screen flex items-center overflow-hidden bg-[#1a1a1a]">
       <div class="absolute inset-0">
         <img 
+          id="hero-image"
           src="https://images.pexels.com/photos/7679725/pexels-photo-7679725.jpeg?auto=compress&cs=tinysrgb&w=1920" 
           alt="Fashion design studio with sketches" 
-          class="w-full h-full object-cover opacity-40"
+          class="w-full h-[120%] object-cover opacity-40 will-change-transform"
           loading="eager"
         />
       </div>
@@ -370,3 +371,21 @@ import Footer from '../components/Footer.astro';
 
   <Footer />
 </Layout>
+
+<script>
+  // Parallax effect for hero image
+  const heroImage = document.getElementById('hero-image');
+  
+  if (heroImage) {
+    window.addEventListener('scroll', () => {
+      const scrolled = window.scrollY;
+      const heroHeight = window.innerHeight;
+      
+      // Only apply parallax when hero is in view
+      if (scrolled < heroHeight) {
+        const parallaxOffset = scrolled * 0.4;
+        heroImage.style.transform = `translateY(${parallaxOffset}px)`;
+      }
+    }, { passive: true });
+  }
+</script>
