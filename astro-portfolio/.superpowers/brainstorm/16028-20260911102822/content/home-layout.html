@@ -1,0 +1,49 @@
+<h2>¿Cómo quieres que se vea tu página de inicio?</h2>
+<p class="subtitle">Estilo Natural y Orgánico seleccionado</p>
+
+<div class="cards">
+  <div class="card" data-choice="hero" onclick="toggleSelect(this)">
+    <div class="card-image" style="background: #F5F0EB; height: 180px; padding: 1rem;">
+      <div style="height: 60%; background: #E0D5C8; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-bottom: 0.5rem;">
+        <span style="font-family: 'Playfair Display', serif; color: #3D3228; font-size: 1.2rem;">Foto de perfil + Nombre</span>
+      </div>
+      <div style="height: 30%; background: #C9B8A5; border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+        <span style="color: #3D3228; font-size: 0.8rem;">Breve presentación</span>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>Hero con Foto</h3>
+      <p>Imagen de perfil grande arriba, nombre y presentación breve debajo. Simple y directo.</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="split" onclick="toggleSelect(this)">
+    <div class="card-image" style="background: #F5F0EB; height: 180px; display: flex; padding: 1rem; gap: 0.5rem;">
+      <div style="flex: 1; background: #E0D5C8; border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+        <span style="font-family: 'Playfair Display', serif; color: #3D3228; font-size: 0.9rem;">Foto</span>
+      </div>
+      <div style="flex: 1; background: #C9B8A5; border-radius: 8px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.3rem;">
+        <span style="font-family: 'Playfair Display', serif; color: #3D3228; font-size: 0.9rem;">Nombre</span>
+        <span style="color: #3D3228; font-size: 0.6rem;">Presentación</span>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>Lado a Lado</h3>
+      <p>Foto a la izquierda, texto a la derecha. Equilibrio visual y moderno.</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="centered" onclick="toggleSelect(this)">
+    <div class="card-image" style="background: #F5F0EB; height: 180px; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 1rem;">
+      <div style="width: 60px; height: 60px; background: #C9B8A5; border-radius: 50%; margin-bottom: 0.5rem;"></div>
+      <span style="font-family: 'Playfair Display', serif; color: #3D3228; font-size: 1rem;">Nombre Completo</span>
+      <span style="color: #5C4A3A; font-size: 0.7rem; text-align: center;">Estudiante de Diseño de Modas</span>
+      <div style="width: 40px; height: 2px; background: #8B7355; margin: 0.5rem 0;"></div>
+      <span style="color: #5C4A3A; font-size: 0.6rem; text-align: center;">Breve descripción del perfil</span>
+    </div>
+    <div class="card-body">
+      <h3>Centrado y Elegante</h3>
+      <p>Foto circular centrada, nombre, título y descripción. Estilo editorial y profesional.</p>
+    </div>
+  </div>
+</div>

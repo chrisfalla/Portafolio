@@ -10,42 +10,41 @@ import Footer from '../components/Footer.astro';
   <main class="flex-1">
 
     <!-- HERO -->
-    <section id="inicio" class="relative min-h-screen flex items-center overflow-hidden">
+    <section id="inicio" class="relative min-h-screen flex items-center overflow-hidden bg-[#1a1a1a]">
       <div class="absolute inset-0">
         <img 
           src="https://images.unsplash.com/photo-1556905055-8f358a7a47b2?w=1920&q=80" 
-          alt="Fashion design studio with sketches and materials" 
-          class="w-full h-full object-cover"
+          alt="Fashion design studio" 
+          class="w-full h-full object-cover opacity-40"
           loading="eager"
         />
-        <div class="absolute inset-0 bg-gradient-to-r from-[#2D2D2D]/95 via-[#2D2D2D]/80 to-[#2D2D2D]/60"></div>
       </div>
 
       <div class="relative z-10 max-w-6xl mx-auto px-6 py-20 w-full">
         <div class="max-w-2xl">
           <div class="flex items-center gap-3 mb-6">
-            <div class="w-12 h-[2px] bg-[#D4C5B5]"></div>
-            <p class="text-[#D4C5B5] font-['Inter'] text-xs tracking-[0.4em] uppercase">Estudiante de Diseño de Modas</p>
+            <div class="w-12 h-[2px] bg-[#C9A96E]"></div>
+            <p class="text-[#C9A96E] font-['Montserrat'] text-xs tracking-[0.4em] uppercase font-medium">Estudiante de Diseño de Modas</p>
           </div>
           
-          <h1 class="font-['Playfair_Display'] text-5xl md:text-7xl lg:text-8xl font-bold text-white leading-[0.95] mb-8">
+          <h1 class="font-['Cormorant'] text-5xl md:text-7xl lg:text-8xl font-bold text-white leading-[0.95] mb-8">
             Creando
-            <span class="block text-[#D4C5B5] italic">Moda</span>
+            <span class="block text-[#C9A96E] italic">Moda</span>
             <span class="block">con Identidad</span>
           </h1>
           
-          <p class="text-[#D4C5B5]/70 text-lg leading-relaxed mb-10 max-w-lg">
+          <p class="text-white/70 text-lg leading-relaxed mb-10 max-w-lg font-['Montserrat']">
             Apasionada por el diseño, el patronaje y la creación de propuestas de vestuario que fusionan creatividad, funcionalidad y tendencia.
           </p>
           
           <div class="flex flex-wrap gap-4">
-            <a href="#sobre-mi" class="group px-8 py-4 bg-[#8B7355] text-white font-medium rounded-full hover:bg-[#D4C5B5] hover:text-[#2D2D2D] transition-all duration-500 flex items-center gap-2">
+            <a href="#sobre-mi" class="group px-8 py-4 bg-[#C9A96E] text-[#1a1a1a] font-['Montserrat'] font-medium rounded-full hover:bg-white transition-all duration-300 flex items-center gap-2">
               Conóceme
               <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
             </a>
-            <a href="#competencias" class="px-8 py-4 border border-white/30 text-white font-medium rounded-full hover:bg-white/10 transition-all duration-500">
+            <a href="#competencias" class="px-8 py-4 border border-white/30 text-white font-['Montserrat'] font-medium rounded-full hover:bg-white/10 transition-all duration-300">
               Ver habilidades
             </a>
           </div>
@@ -54,68 +53,68 @@ import Footer from '../components/Footer.astro';
 
       <!-- Scroll indicator -->
       <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2">
-        <span class="text-white/50 text-xs tracking-widest uppercase">Scroll</span>
-        <div class="w-[1px] h-12 bg-gradient-to-b from-white/50 to-transparent animate-pulse"></div>
+        <span class="text-white/40 text-xs tracking-widest uppercase font-['Montserrat']">Scroll</span>
+        <div class="w-[1px] h-12 bg-gradient-to-b from-white/40 to-transparent animate-pulse"></div>
       </div>
     </section>
 
     <!-- SOBRE MÍ -->
-    <section id="sobre-mi" class="py-32 px-6 bg-[#FAF8F5]">
+    <section id="sobre-mi" class="py-32 px-6 bg-white">
       <div class="max-w-6xl mx-auto">
         <div class="grid lg:grid-cols-2 gap-16 items-center">
           <!-- Imagen -->
           <div class="relative">
-            <div class="aspect-[4/5] rounded-3xl overflow-hidden">
+            <div class="aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl">
               <img 
                 src="https://images.unsplash.com/photo-1581044777550-4cfa60707998?w=800&q=80" 
-                alt="Fashion designer working with fabrics" 
+                alt="Fashion designer working" 
                 class="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                 loading="lazy"
               />
             </div>
-            <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-[#E8E0D8] rounded-2xl -z-10"></div>
-            <div class="absolute -top-6 -left-6 w-24 h-24 border-2 border-[#8B7355] rounded-2xl -z-10"></div>
+            <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-[#F5F0EB] rounded-2xl -z-10"></div>
+            <div class="absolute -top-6 -left-6 w-24 h-24 border-2 border-[#C9A96E] rounded-2xl -z-10"></div>
           </div>
 
           <!-- Contenido -->
           <div>
             <div class="flex items-center gap-3 mb-4">
-              <div class="w-12 h-[2px] bg-[#8B7355]"></div>
-              <p class="text-[#8B7355] font-['Inter'] text-xs tracking-[0.3em] uppercase">Mi historia</p>
+              <div class="w-12 h-[2px] bg-[#C9A96E]"></div>
+              <p class="text-[#C9A96E] font-['Montserrat'] text-xs tracking-[0.3em] uppercase font-medium">Mi historia</p>
             </div>
             
-            <h2 class="font-['Playfair_Display'] text-4xl md:text-5xl font-bold text-[#2D2D2D] mb-8">
-              Sobre <span class="italic text-[#8B7355]">Mí</span>
+            <h2 class="font-['Cormorant'] text-4xl md:text-5xl font-bold text-[#1a1a1a] mb-8">
+              Sobre <span class="italic text-[#C9A96E]">Mí</span>
             </h2>
             
-            <p class="text-[#5C4A3A] text-lg leading-relaxed mb-6">
+            <p class="text-[#4a4a4a] text-lg leading-relaxed mb-6 font-['Montserrat']">
               Soy estudiante de Diseño de Modas, interesada en desarrollar mi creatividad y fortalecer mis conocimientos técnicos en el diseño, patronaje y confección de prendas.
             </p>
-            <p class="text-[#5C4A3A] text-lg leading-relaxed mb-8">
+            <p class="text-[#4a4a4a] text-lg leading-relaxed mb-8 font-['Montserrat']">
               Mi área de interés profesional se enfoca en el diseño de moda femenina, la creación de colecciones, la investigación de tendencias y el desarrollo de propuestas inspiradas en las necesidades y tendencias actuales.
             </p>
 
             <!-- Tags -->
             <div class="flex flex-wrap gap-3 mb-10">
-              <span class="px-5 py-2.5 bg-[#E8E0D8] text-[#5C4A3A] text-sm rounded-full border border-[#D4C5B5]">Diseño de Moda</span>
-              <span class="px-5 py-2.5 bg-[#E8E0D8] text-[#5C4A3A] text-sm rounded-full border border-[#D4C5B5]">Patronaje</span>
-              <span class="px-5 py-2.5 bg-[#E8E0D8] text-[#5C4A3A] text-sm rounded-full border border-[#D4C5B5]">Confección</span>
-              <span class="px-5 py-2.5 bg-[#E8E0D8] text-[#5C4A3A] text-sm rounded-full border border-[#D4C5B5]">Tendencias</span>
+              <span class="px-5 py-2.5 bg-[#F5F0EB] text-[#4a4a4a] text-sm rounded-full font-['Montserrat']">Diseño de Moda</span>
+              <span class="px-5 py-2.5 bg-[#F5F0EB] text-[#4a4a4a] text-sm rounded-full font-['Montserrat']">Patronaje</span>
+              <span class="px-5 py-2.5 bg-[#F5F0EB] text-[#4a4a4a] text-sm rounded-full font-['Montserrat']">Confección</span>
+              <span class="px-5 py-2.5 bg-[#F5F0EB] text-[#4a4a4a] text-sm rounded-full font-['Montserrat']">Tendencias</span>
             </div>
 
             <!-- Stats -->
             <div class="grid grid-cols-3 gap-6">
-              <div class="text-center p-4 bg-white rounded-2xl border border-[#D4C5B5]/50">
-                <p class="font-['Playfair_Display'] text-3xl font-bold text-[#8B7355]">10+</p>
-                <p class="text-xs text-[#5C4A3A] mt-1">Habilidades</p>
+              <div class="text-center p-4 bg-[#F5F0EB] rounded-2xl">
+                <p class="font-['Cormorant'] text-3xl font-bold text-[#C9A96E]">10+</p>
+                <p class="text-xs text-[#4a4a4a] mt-1 font-['Montserrat']">Habilidades</p>
               </div>
-              <div class="text-center p-4 bg-white rounded-2xl border border-[#D4C5B5]/50">
-                <p class="font-['Playfair_Display'] text-3xl font-bold text-[#8B7355]">5+</p>
-                <p class="text-xs text-[#5C4A3A] mt-1">Herramientas</p>
+              <div class="text-center p-4 bg-[#F5F0EB] rounded-2xl">
+                <p class="font-['Cormorant'] text-3xl font-bold text-[#C9A96E]">5+</p>
+                <p class="text-xs text-[#4a4a4a] mt-1 font-['Montserrat']">Herramientas</p>
               </div>
-              <div class="text-center p-4 bg-white rounded-2xl border border-[#D4C5B5]/50">
-                <p class="font-['Playfair_Display'] text-3xl font-bold text-[#8B7355]">&#8734;</p>
-                <p class="text-xs text-[#5C4A3A] mt-1">Pasión</p>
+              <div class="text-center p-4 bg-[#F5F0EB] rounded-2xl">
+                <p class="font-['Cormorant'] text-3xl font-bold text-[#C9A96E]">&#8734;</p>
+                <p class="text-xs text-[#4a4a4a] mt-1 font-['Montserrat']">Pasión</p>
               </div>
             </div>
           </div>
@@ -124,112 +123,133 @@ import Footer from '../components/Footer.astro';
     </section>
 
     <!-- COMPETENCIAS -->
-    <section id="competencias" class="py-32 px-6 bg-[#2D2D2D]">
+    <section id="competencias" class="py-32 px-6 bg-[#F5F0EB]">
       <div class="max-w-6xl mx-auto">
         <div class="text-center mb-20">
           <div class="flex items-center justify-center gap-3 mb-4">
-            <div class="w-12 h-[2px] bg-[#D4C5B5]"></div>
-            <p class="text-[#D4C5B5] font-['Inter'] text-xs tracking-[0.3em] uppercase">Lo que sé hacer</p>
-            <div class="w-12 h-[2px] bg-[#D4C5B5]"></div>
+            <div class="w-12 h-[2px] bg-[#C9A96E]"></div>
+            <p class="text-[#C9A96E] font-['Montserrat'] text-xs tracking-[0.3em] uppercase font-medium">Lo que sé hacer</p>
+            <div class="w-12 h-[2px] bg-[#C9A96E]"></div>
           </div>
-          <h2 class="font-['Playfair_Display'] text-4xl md:text-5xl font-bold text-white">
-            Competencias <span class="italic text-[#D4C5B5]">&</span> Herramientas
+          <h2 class="font-['Cormorant'] text-4xl md:text-5xl font-bold text-[#1a1a1a]">
+            Competencias <span class="italic text-[#C9A96E]">&</span> Herramientas
           </h2>
         </div>
 
         <!-- Habilidades Blandas -->
         <div class="mb-20">
-          <h3 class="font-['Playfair_Display'] text-2xl font-semibold text-white mb-10 text-center">Habilidades</h3>
+          <h3 class="font-['Cormorant'] text-2xl font-semibold text-[#1a1a1a] mb-10 text-center">Habilidades</h3>
           <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
-            <div class="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 text-center hover:bg-[#8B7355] transition-all duration-500 hover:border-[#8B7355] hover:-translate-y-2">
-              <div class="text-3xl mb-3 group-hover:scale-110 transition-transform">&#128170;</div>
-              <p class="text-sm font-medium text-white/80 group-hover:text-white">Creatividad</p>
+            <div class="group bg-white rounded-2xl p-6 text-center hover:bg-[#C9A96E] transition-all duration-300 hover:-translate-y-1 shadow-sm hover:shadow-xl cursor-pointer">
+              <svg class="w-8 h-8 mx-auto mb-3 text-[#C9A96E] group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+              </svg>
+              <p class="text-sm font-medium text-[#1a1a1a] group-hover:text-white transition-colors font-['Montserrat']">Creatividad</p>
             </div>
-            <div class="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 text-center hover:bg-[#8B7355] transition-all duration-500 hover:border-[#8B7355] hover:-translate-y-2">
-              <div class="text-3xl mb-3 group-hover:scale-110 transition-transform">&#9998;</div>
-              <p class="text-sm font-medium text-white/80 group-hover:text-white">Dibujo</p>
+            <div class="group bg-white rounded-2xl p-6 text-center hover:bg-[#C9A96E] transition-all duration-300 hover:-translate-y-1 shadow-sm hover:shadow-xl cursor-pointer">
+              <svg class="w-8 h-8 mx-auto mb-3 text-[#C9A96E] group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
+              </svg>
+              <p class="text-sm font-medium text-[#1a1a1a] group-hover:text-white transition-colors font-['Montserrat']">Dibujo</p>
             </div>
-            <div class="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 text-center hover:bg-[#8B7355] transition-all duration-500 hover:border-[#8B7355] hover:-translate-y-2">
-              <div class="text-3xl mb-3 group-hover:scale-110 transition-transform">&#127912;</div>
-              <p class="text-sm font-medium text-white/80 group-hover:text-white">Moodboards</p>
+            <div class="group bg-white rounded-2xl p-6 text-center hover:bg-[#C9A96E] transition-all duration-300 hover:-translate-y-1 shadow-sm hover:shadow-xl cursor-pointer">
+              <svg class="w-8 h-8 mx-auto mb-3 text-[#C9A96E] group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+              </svg>
+              <p class="text-sm font-medium text-[#1a1a1a] group-hover:text-white transition-colors font-['Montserrat']">Moodboards</p>
             </div>
-            <div class="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 text-center hover:bg-[#8B7355] transition-all duration-500 hover:border-[#8B7355] hover:-translate-y-2">
-              <div class="text-3xl mb-3 group-hover:scale-110 transition-transform">&#127752;</div>
-              <p class="text-sm font-medium text-white/80 group-hover:text-white">Color</p>
+            <div class="group bg-white rounded-2xl p-6 text-center hover:bg-[#C9A96E] transition-all duration-300 hover:-translate-y-1 shadow-sm hover:shadow-xl cursor-pointer">
+              <svg class="w-8 h-8 mx-auto mb-3 text-[#C9A96E] group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
+              </svg>
+              <p class="text-sm font-medium text-[#1a1a1a] group-hover:text-white transition-colors font-['Montserrat']">Color</p>
             </div>
-            <div class="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 text-center hover:bg-[#8B7355] transition-all duration-500 hover:border-[#8B7355] hover:-translate-y-2">
-              <div class="text-3xl mb-3 group-hover:scale-110 transition-transform">&#9986;</div>
-              <p class="text-sm font-medium text-white/80 group-hover:text-white">Patronaje</p>
+            <div class="group bg-white rounded-2xl p-6 text-center hover:bg-[#C9A96E] transition-all duration-300 hover:-translate-y-1 shadow-sm hover:shadow-xl cursor-pointer">
+              <svg class="w-8 h-8 mx-auto mb-3 text-[#C9A96E] group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14.121 14.121L19 19m-7-7l7-7m-7 7l-2.879 2.879M12 12L9.121 9.121m0 5.758a3 3 0 10-4.243 4.243 3 3 0 004.243-4.243zm0-5.758a3 3 0 10-4.243-4.243 3 3 0 004.243 4.243z" />
+              </svg>
+              <p class="text-sm font-medium text-[#1a1a1a] group-hover:text-white transition-colors font-['Montserrat']">Patronaje</p>
             </div>
-            <div class="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 text-center hover:bg-[#8B7355] transition-all duration-500 hover:border-[#8B7355] hover:-translate-y-2">
-              <div class="text-3xl mb-3 group-hover:scale-110 transition-transform">&#128736;</div>
-              <p class="text-sm font-medium text-white/80 group-hover:text-white">Confección</p>
+            <div class="group bg-white rounded-2xl p-6 text-center hover:bg-[#C9A96E] transition-all duration-300 hover:-translate-y-1 shadow-sm hover:shadow-xl cursor-pointer">
+              <svg class="w-8 h-8 mx-auto mb-3 text-[#C9A96E] group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+              </svg>
+              <p class="text-sm font-medium text-[#1a1a1a] group-hover:text-white transition-colors font-['Montserrat']">Confección</p>
             </div>
-            <div class="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 text-center hover:bg-[#8B7355] transition-all duration-500 hover:border-[#8B7355] hover:-translate-y-2">
-              <div class="text-3xl mb-3 group-hover:scale-110 transition-transform">&#128269;</div>
-              <p class="text-sm font-medium text-white/80 group-hover:text-white">Tendencias</p>
+            <div class="group bg-white rounded-2xl p-6 text-center hover:bg-[#C9A96E] transition-all duration-300 hover:-translate-y-1 shadow-sm hover:shadow-xl cursor-pointer">
+              <svg class="w-8 h-8 mx-auto mb-3 text-[#C9A96E] group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+              </svg>
+              <p class="text-sm font-medium text-[#1a1a1a] group-hover:text-white transition-colors font-['Montserrat']">Tendencias</p>
             </div>
-            <div class="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 text-center hover:bg-[#8B7355] transition-all duration-500 hover:border-[#8B7355] hover:-translate-y-2">
-              <div class="text-3xl mb-3 group-hover:scale-110 transition-transform">&#127912;</div>
-              <p class="text-sm font-medium text-white/80 group-hover:text-white">Conceptos</p>
+            <div class="group bg-white rounded-2xl p-6 text-center hover:bg-[#C9A96E] transition-all duration-300 hover:-translate-y-1 shadow-sm hover:shadow-xl cursor-pointer">
+              <svg class="w-8 h-8 mx-auto mb-3 text-[#C9A96E] group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.53 16.122a3 3 0 00-5.78 1.128 2.25 2.25 0 01-2.4 2.245 4.5 4.5 0 008.4-2.245c0-.399-.078-.78-.22-1.128zm0 0a15.998 15.998 0 003.388-1.62m-5.043-.025a15.994 15.994 0 011.622-3.395m3.42 3.42a15.995 15.995 0 004.764-4.648l3.876-5.814a1.151 1.151 0 00-1.597-1.597L14.146 6.32a15.996 15.996 0 00-4.649 4.763m3.42 3.42a6.776 6.776 0 00-3.42-3.42" />
+              </svg>
+              <p class="text-sm font-medium text-[#1a1a1a] group-hover:text-white transition-colors font-['Montserrat']">Conceptos</p>
             </div>
-            <div class="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 text-center hover:bg-[#8B7355] transition-all duration-500 hover:border-[#8B7355] hover:-translate-y-2">
-              <div class="text-3xl mb-3 group-hover:scale-110 transition-transform">&#128065;</div>
-              <p class="text-sm font-medium text-white/80 group-hover:text-white">Detalle</p>
+            <div class="group bg-white rounded-2xl p-6 text-center hover:bg-[#C9A96E] transition-all duration-300 hover:-translate-y-1 shadow-sm hover:shadow-xl cursor-pointer">
+              <svg class="w-8 h-8 mx-auto mb-3 text-[#C9A96E] group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+              <p class="text-sm font-medium text-[#1a1a1a] group-hover:text-white transition-colors font-['Montserrat']">Detalle</p>
             </div>
-            <div class="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 text-center hover:bg-[#8B7355] transition-all duration-500 hover:border-[#8B7355] hover:-translate-y-2">
-              <div class="text-3xl mb-3 group-hover:scale-110 transition-transform">&#128172;</div>
-              <p class="text-sm font-medium text-white/80 group-hover:text-white">Comunicación</p>
+            <div class="group bg-white rounded-2xl p-6 text-center hover:bg-[#C9A96E] transition-all duration-300 hover:-translate-y-1 shadow-sm hover:shadow-xl cursor-pointer">
+              <svg class="w-8 h-8 mx-auto mb-3 text-[#C9A96E] group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-.474-.065 4.48 4.48 0 00.978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z" />
+              </svg>
+              <p class="text-sm font-medium text-[#1a1a1a] group-hover:text-white transition-colors font-['Montserrat']">Comunicación</p>
             </div>
           </div>
         </div>
 
         <!-- Herramientas Digitales -->
         <div>
-          <h3 class="font-['Playfair_Display'] text-2xl font-semibold text-white mb-10 text-center">Herramientas Digitales</h3>
+          <h3 class="font-['Cormorant'] text-2xl font-semibold text-[#1a1a1a] mb-10 text-center">Herramientas Digitales</h3>
           <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div class="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl p-8 hover:bg-gradient-to-b hover:from-[#8B7355] hover:to-[#5C4A3A] transition-all duration-500 hover:border-transparent">
-              <div class="w-14 h-14 bg-gradient-to-br from-[#D4C5B5] to-[#8B7355] rounded-2xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+            <div class="group bg-white rounded-3xl p-8 hover:shadow-xl transition-all duration-300 border border-[#E8E4DF]">
+              <div class="w-14 h-14 bg-gradient-to-br from-[#C9A96E] to-[#A67C52] rounded-2xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
                 <svg class="w-7 h-7 text-white" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
                 </svg>
               </div>
-              <h4 class="font-semibold text-white text-lg mb-2">Canva</h4>
-              <p class="text-xs text-[#D4C5B5] uppercase tracking-wider mb-3">Diseño gráfico</p>
-              <p class="text-sm text-white/70 leading-relaxed">Elaboración de moodboards, presentaciones y materiales visuales para proyectos de moda.</p>
+              <h4 class="font-semibold text-[#1a1a1a] text-lg mb-2 font-['Montserrat']">Canva</h4>
+              <p class="text-xs text-[#C9A96E] uppercase tracking-wider mb-3 font-['Montserrat'] font-medium">Diseño gráfico</p>
+              <p class="text-sm text-[#4a4a4a] leading-relaxed font-['Montserrat']">Elaboración de moodboards, presentaciones y materiales visuales para proyectos de moda.</p>
             </div>
 
-            <div class="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl p-8 hover:bg-gradient-to-b hover:from-[#8B7355] hover:to-[#5C4A3A] transition-all duration-500 hover:border-transparent">
-              <div class="w-14 h-14 bg-gradient-to-br from-[#D4C5B5] to-[#8B7355] rounded-2xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+            <div class="group bg-white rounded-3xl p-8 hover:shadow-xl transition-all duration-300 border border-[#E8E4DF]">
+              <div class="w-14 h-14 bg-gradient-to-br from-[#C9A96E] to-[#A67C52] rounded-2xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
                 <svg class="w-7 h-7 text-white" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M12 0C5.37 0 0 5.37 0 12c0 5.08 3.15 9.42 7.6 11.18-.1-.95-.2-2.4.04-3.44.22-.94 1.4-5.94 1.4-5.94s-.36-.71-.36-1.77c0-1.66.96-2.9 2.16-2.9 1.02 0 1.51.77 1.51 1.68 0 1.03-.65 2.56-.99 3.98-.28 1.19.6 2.16 1.77 2.16 2.13 0 3.77-2.25 3.77-5.49 0-2.87-2.06-4.87-5-4.87-3.41 0-5.41 2.56-5.41 5.2 0 1.03.4 2.13.89 2.73.1.12.11.22.08.34-.09.37-.29 1.19-.33 1.36-.05.22-.18.27-.41.16-1.52-.71-2.47-2.93-2.47-4.72 0-3.84 2.79-7.37 8.03-7.37 4.21 0 7.49 3 7.49 7 0 4.18-2.63 7.54-6.28 7.54-1.23 0-2.38-.64-2.77-1.39l-.76 2.88c-.27 1.06-1.01 2.4-1.51 3.21C9.58 23.81 10.77 24 12 24c6.63 0 12-5.37 12-12S18.63 0 12 0z"/>
                 </svg>
               </div>
-              <h4 class="font-semibold text-white text-lg mb-2">Pinterest</h4>
-              <p class="text-xs text-[#D4C5B5] uppercase tracking-wider mb-3">Inspiración</p>
-              <p class="text-sm text-white/70 leading-relaxed">Búsqueda de referencias, tendencias e inspiración para diseños y colecciones.</p>
+              <h4 class="font-semibold text-[#1a1a1a] text-lg mb-2 font-['Montserrat']">Pinterest</h4>
+              <p class="text-xs text-[#C9A96E] uppercase tracking-wider mb-3 font-['Montserrat'] font-medium">Inspiración</p>
+              <p class="text-sm text-[#4a4a4a] leading-relaxed font-['Montserrat']">Búsqueda de referencias, tendencias e inspiración para diseños y colecciones.</p>
             </div>
 
-            <div class="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl p-8 hover:bg-gradient-to-b hover:from-[#8B7355] hover:to-[#5C4A3A] transition-all duration-500 hover:border-transparent">
-              <div class="w-14 h-14 bg-gradient-to-br from-[#D4C5B5] to-[#8B7355] rounded-2xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+            <div class="group bg-white rounded-3xl p-8 hover:shadow-xl transition-all duration-300 border border-[#E8E4DF]">
+              <div class="w-14 h-14 bg-gradient-to-br from-[#C9A96E] to-[#A67C52] rounded-2xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
                 <svg class="w-7 h-7 text-white" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053H12.48z"/>
                 </svg>
               </div>
-              <h4 class="font-semibold text-white text-lg mb-2">Google Trends</h4>
-              <p class="text-xs text-[#D4C5B5] uppercase tracking-wider mb-3">Análisis</p>
-              <p class="text-sm text-white/70 leading-relaxed">Investigación de tendencias actuales y búsquedas populares en la industria.</p>
+              <h4 class="font-semibold text-[#1a1a1a] text-lg mb-2 font-['Montserrat']">Google Trends</h4>
+              <p class="text-xs text-[#C9A96E] uppercase tracking-wider mb-3 font-['Montserrat'] font-medium">Análisis</p>
+              <p class="text-sm text-[#4a4a4a] leading-relaxed font-['Montserrat']">Investigación de tendencias actuales y búsquedas populares en la industria.</p>
             </div>
 
-            <div class="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl p-8 hover:bg-gradient-to-b hover:from-[#8B7355] hover:to-[#5C4A3A] transition-all duration-500 hover:border-transparent">
-              <div class="w-14 h-14 bg-gradient-to-br from-[#D4C5B5] to-[#8B7355] rounded-2xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+            <div class="group bg-white rounded-3xl p-8 hover:shadow-xl transition-all duration-300 border border-[#E8E4DF]">
+              <div class="w-14 h-14 bg-gradient-to-br from-[#C9A96E] to-[#A67C52] rounded-2xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
                 <svg class="w-7 h-7 text-white" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
                 </svg>
               </div>
-              <h4 class="font-semibold text-white text-lg mb-2">Instagram</h4>
-              <p class="text-xs text-[#D4C5B5] uppercase tracking-wider mb-3">Red social</p>
-              <p class="text-sm text-white/70 leading-relaxed">Tendencias, propuestas y portafolio visual para comunicar diseños.</p>
+              <h4 class="font-semibold text-[#1a1a1a] text-lg mb-2 font-['Montserrat']">Instagram</h4>
+              <p class="text-xs text-[#C9A96E] uppercase tracking-wider mb-3 font-['Montserrat'] font-medium">Red social</p>
+              <p class="text-sm text-[#4a4a4a] leading-relaxed font-['Montserrat']">Tendencias, propuestas y portafolio visual para comunicar diseños.</p>
             </div>
           </div>
         </div>
@@ -237,35 +257,35 @@ import Footer from '../components/Footer.astro';
     </section>
 
     <!-- PROYECCIÓN PROFESIONAL -->
-    <section id="proyeccion" class="py-32 px-6 bg-[#FAF8F5] relative overflow-hidden">
-      <div class="absolute top-0 right-0 w-96 h-96 bg-[#E8E0D8] rounded-full blur-[150px] opacity-50"></div>
-      <div class="absolute bottom-0 left-0 w-96 h-96 bg-[#D4C5B5] rounded-full blur-[150px] opacity-30"></div>
+    <section id="proyeccion" class="py-32 px-6 bg-white relative overflow-hidden">
+      <div class="absolute top-0 right-0 w-96 h-96 bg-[#F5F0EB] rounded-full blur-[150px] opacity-50"></div>
+      <div class="absolute bottom-0 left-0 w-96 h-96 bg-[#E8E4DF] rounded-full blur-[150px] opacity-30"></div>
       
       <div class="max-w-6xl mx-auto relative z-10">
         <div class="text-center mb-20">
           <div class="flex items-center justify-center gap-3 mb-4">
-            <div class="w-12 h-[2px] bg-[#8B7355]"></div>
-            <p class="text-[#8B7355] font-['Inter'] text-xs tracking-[0.3em] uppercase">Mi futuro</p>
-            <div class="w-12 h-[2px] bg-[#8B7355]"></div>
+            <div class="w-12 h-[2px] bg-[#C9A96E]"></div>
+            <p class="text-[#C9A96E] font-['Montserrat'] text-xs tracking-[0.3em] uppercase font-medium">Mi futuro</p>
+            <div class="w-12 h-[2px] bg-[#C9A96E]"></div>
           </div>
-          <h2 class="font-['Playfair_Display'] text-4xl md:text-5xl font-bold text-[#2D2D2D]">
-            Proyección <span class="italic text-[#8B7355]">Profesional</span>
+          <h2 class="font-['Cormorant'] text-4xl md:text-5xl font-bold text-[#1a1a1a]">
+            Proyección <span class="italic text-[#C9A96E]">Profesional</span>
           </h2>
         </div>
 
         <!-- Objetivo Principal -->
-        <div class="relative mb-16 rounded-3xl overflow-hidden">
+        <div class="relative mb-16 rounded-3xl overflow-hidden shadow-2xl">
           <img 
             src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1200&q=80" 
-            alt="Fashion boutique with curated collection" 
+            alt="Fashion boutique" 
             class="w-full h-80 md:h-96 object-cover"
             loading="lazy"
           />
-          <div class="absolute inset-0 bg-gradient-to-r from-[#2D2D2D] via-[#2D2D2D]/90 to-transparent flex items-center">
+          <div class="absolute inset-0 bg-gradient-to-r from-[#1a1a1a] via-[#1a1a1a]/90 to-transparent flex items-center">
             <div class="p-8 md:p-12 max-w-xl">
-              <p class="text-[#D4C5B5] text-sm tracking-[0.2em] uppercase mb-3">Mi Objetivo</p>
-              <p class="font-['Playfair_Display'] text-2xl md:text-3xl text-white leading-relaxed">
-                Convertirme en una diseñadora de modas <span class="text-[#D4C5B5] italic">creativa, innovadora y responsable</span>, especializada en el diseño y desarrollo de prendas y colecciones con una identidad propia.
+              <p class="text-[#C9A96E] text-sm tracking-[0.2em] uppercase mb-3 font-['Montserrat'] font-medium">Mi Objetivo</p>
+              <p class="font-['Cormorant'] text-2xl md:text-3xl text-white leading-relaxed">
+                Convertirme en una diseñadora de modas <span class="text-[#C9A96E] italic">creativa, innovadora y responsable</span>, especializada en el diseño y desarrollo de prendas y colecciones con una identidad propia.
               </p>
             </div>
           </div>
@@ -273,66 +293,72 @@ import Footer from '../components/Footer.astro';
 
         <!-- Metas -->
         <div class="grid md:grid-cols-3 gap-8 mb-16">
-          <div class="group bg-white rounded-3xl p-8 border border-[#D4C5B5]/30 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
-            <div class="w-16 h-16 bg-gradient-to-br from-[#E8E0D8] to-[#D4C5B5] rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-              <span class="text-3xl">&#128218;</span>
+          <div class="group bg-[#F5F0EB] rounded-3xl p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+            <div class="w-16 h-16 bg-[#C9A96E] rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+              </svg>
             </div>
-            <h3 class="font-['Playfair_Display'] text-xl font-semibold text-[#2D2D2D] mb-3">Formación Técnica</h3>
-            <p class="text-sm text-[#5C4A3A] leading-relaxed">Fortalecer conocimientos en patronaje, confección, diseño y herramientas digitales para la industria de la moda.</p>
+            <h3 class="font-['Cormorant'] text-xl font-semibold text-[#1a1a1a] mb-3">Formación Técnica</h3>
+            <p class="text-sm text-[#4a4a4a] leading-relaxed font-['Montserrat']">Fortalecer conocimientos en patronaje, confección, diseño y herramientas digitales para la industria de la moda.</p>
           </div>
           
-          <div class="group bg-white rounded-3xl p-8 border border-[#D4C5B5]/30 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
-            <div class="w-16 h-16 bg-gradient-to-br from-[#E8E0D8] to-[#D4C5B5] rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-              <span class="text-3xl">&#10024;</span>
+          <div class="group bg-[#F5F0EB] rounded-3xl p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+            <div class="w-16 h-16 bg-[#C9A96E] rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.455 2.456L21.75 6l-1.036.259a3.375 3.375 0 00-2.455 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z" />
+              </svg>
             </div>
-            <h3 class="font-['Playfair_Display'] text-xl font-semibold text-[#2D2D2D] mb-3">Identidad Creativa</h3>
-            <p class="text-sm text-[#5C4A3A] leading-relaxed">Explorar y definir un estilo personal que me diferencie y me posicione en la industria de la moda.</p>
+            <h3 class="font-['Cormorant'] text-xl font-semibold text-[#1a1a1a] mb-3">Identidad Creativa</h3>
+            <p class="text-sm text-[#4a4a4a] leading-relaxed font-['Montserrat']">Explorar y definir un estilo personal que me diferencie y me posicione en la industria de la moda.</p>
           </div>
           
-          <div class="group bg-white rounded-3xl p-8 border border-[#D4C5B5]/30 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
-            <div class="w-16 h-16 bg-gradient-to-br from-[#E8E0D8] to-[#D4C5B5] rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-              <span class="text-3xl">&#127942;</span>
+          <div class="group bg-[#F5F0EB] rounded-3xl p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+            <div class="w-16 h-16 bg-[#C9A96E] rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16.5 18.75h-9m9 0a3 3 0 013 3h-15a3 3 0 013-3m9 0v-3.375c0-.621-.503-1.125-1.125-1.125h-.871M7.5 18.75v-3.375c0-.621.504-1.125 1.125-1.125h.872m5.007 0H9.497m5.007 0a7.454 7.454 0 01-.982-3.172M9.497 14.25a7.454 7.454 0 00.981-3.172M5.25 4.236c-.982.143-1.954.317-2.916.52A6.003 6.003 0 007.73 9.728M5.25 4.236V4.5c0 2.108.966 3.99 2.48 5.228M5.25 4.236V2.721C7.456 2.41 9.71 2.25 12 2.25c2.291 0 4.545.16 6.75.47v1.516M18.75 4.236c.982.143 1.954.317 2.916.52A6.003 6.003 0 0116.27 9.728M18.75 4.236V4.5c0 2.108-.966 3.99-2.48 5.228m0 0a6.003 6.003 0 01-5.54 0" />
+              </svg>
             </div>
-            <h3 class="font-['Playfair_Display'] text-xl font-semibold text-[#2D2D2D] mb-3">Marca Propia</h3>
-            <p class="text-sm text-[#5C4A3A] leading-relaxed">Desarrollar una marca de moda con propuestas innovadoras, funcionales y con identidad propia.</p>
+            <h3 class="font-['Cormorant'] text-xl font-semibold text-[#1a1a1a] mb-3">Marca Propia</h3>
+            <p class="text-sm text-[#4a4a4a] leading-relaxed font-['Montserrat']">Desarrollar una marca de moda con propuestas innovadoras, funcionales y con identidad propia.</p>
           </div>
         </div>
 
         <!-- Identidad Digital -->
-        <div class="bg-[#2D2D2D] rounded-3xl p-8 md:p-12">
-          <h3 class="font-['Playfair_Display'] text-2xl font-semibold text-white mb-8 text-center">Identidad Digital Responsable</h3>
+        <div class="bg-[#1a1a1a] rounded-3xl p-8 md:p-12">
+          <h3 class="font-['Cormorant'] text-2xl font-semibold text-white mb-8 text-center">Identidad Digital Responsable</h3>
           <div class="grid md:grid-cols-3 gap-8">
             <div class="flex items-start gap-4">
-              <div class="w-10 h-10 bg-[#8B7355] rounded-full flex items-center justify-center flex-shrink-0">
-                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div class="w-10 h-10 bg-[#C9A96E] rounded-full flex items-center justify-center flex-shrink-0">
+                <svg class="w-5 h-5 text-[#1a1a1a]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                 </svg>
               </div>
               <div>
-                <p class="text-white font-medium mb-1">Protección de datos</p>
-                <p class="text-sm text-[#D4C5B5]/70">Cuidado con la información personal que comparto públicamente.</p>
+                <p class="text-white font-medium mb-1 font-['Montserrat']">Protección de datos</p>
+                <p class="text-sm text-white/60 font-['Montserrat']">Cuidado con la información personal que comparto públicamente.</p>
               </div>
             </div>
             <div class="flex items-start gap-4">
-              <div class="w-10 h-10 bg-[#8B7355] rounded-full flex items-center justify-center flex-shrink-0">
-                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div class="w-10 h-10 bg-[#C9A96E] rounded-full flex items-center justify-center flex-shrink-0">
+                <svg class="w-5 h-5 text-[#1a1a1a]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                 </svg>
               </div>
               <div>
-                <p class="text-white font-medium mb-1">Perfil profesional</p>
-                <p class="text-sm text-[#D4C5B5]/70">Imágenes y contenido apropiado para mi desarrollo profesional.</p>
+                <p class="text-white font-medium mb-1 font-['Montserrat']">Perfil profesional</p>
+                <p class="text-sm text-white/60 font-['Montserrat']">Imágenes y contenido apropiado para mi desarrollo profesional.</p>
               </div>
             </div>
             <div class="flex items-start gap-4">
-              <div class="w-10 h-10 bg-[#8B7355] rounded-full flex items-center justify-center flex-shrink-0">
-                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div class="w-10 h-10 bg-[#C9A96E] rounded-full flex items-center justify-center flex-shrink-0">
+                <svg class="w-5 h-5 text-[#1a1a1a]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                 </svg>
               </div>
               <div>
-                <p class="text-white font-medium mb-1">Contenido relevante</p>
-                <p class="text-sm text-[#D4C5B5]/70">Compartir únicamente información relevante para mi carrera.</p>
+                <p class="text-white font-medium mb-1 font-['Montserrat']">Contenido relevante</p>
+                <p class="text-sm text-white/60 font-['Montserrat']">Compartir únicamente información relevante para mi carrera.</p>
               </div>
             </div>
           </div>
