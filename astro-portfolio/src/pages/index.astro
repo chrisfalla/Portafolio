@@ -141,66 +141,125 @@ import Footer from '../components/Footer.astro';
         <div class="mb-20">
           <h3 class="font-['Cormorant'] text-2xl font-semibold text-[#1a1a1a] mb-10 text-center">Habilidades</h3>
           <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
-            <div class="group bg-white rounded-2xl p-6 text-center hover:bg-[#C9A96E] transition-all duration-300 hover:-translate-y-1 shadow-sm hover:shadow-xl cursor-pointer">
-              <svg class="w-8 h-8 mx-auto mb-3 text-[#C9A96E] group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-              </svg>
-              <p class="text-sm font-medium text-[#1a1a1a] group-hover:text-white transition-colors font-['Montserrat']">Creatividad</p>
+            <!-- Creatividad -->
+            <div class="group relative h-56 rounded-2xl overflow-hidden cursor-pointer">
+              <img src="https://images.pexels.com/photos/1762851/pexels-photo-1762851.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Creatividad" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+              <div class="absolute inset-0 bg-gradient-to-t from-[#1a1a1a]/90 via-[#1a1a1a]/50 to-transparent"></div>
+              <div class="absolute inset-0 flex flex-col items-center justify-end p-5">
+                <svg class="w-8 h-8 text-[#C9A96E] mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                </svg>
+                <p class="text-sm font-medium text-white font-['Montserrat']">Creatividad</p>
+              </div>
             </div>
-            <div class="group bg-white rounded-2xl p-6 text-center hover:bg-[#C9A96E] transition-all duration-300 hover:-translate-y-1 shadow-sm hover:shadow-xl cursor-pointer">
-              <svg class="w-8 h-8 mx-auto mb-3 text-[#C9A96E] group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
-              </svg>
-              <p class="text-sm font-medium text-[#1a1a1a] group-hover:text-white transition-colors font-['Montserrat']">Dibujo</p>
+
+            <!-- Dibujo -->
+            <div class="group relative h-56 rounded-2xl overflow-hidden cursor-pointer">
+              <img src="https://images.pexels.com/photos/1109354/pexels-photo-1109354.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Dibujo" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+              <div class="absolute inset-0 bg-gradient-to-t from-[#1a1a1a]/90 via-[#1a1a1a]/50 to-transparent"></div>
+              <div class="absolute inset-0 flex flex-col items-center justify-end p-5">
+                <svg class="w-8 h-8 text-[#C9A96E] mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
+                </svg>
+                <p class="text-sm font-medium text-white font-['Montserrat']">Dibujo</p>
+              </div>
             </div>
-            <div class="group bg-white rounded-2xl p-6 text-center hover:bg-[#C9A96E] transition-all duration-300 hover:-translate-y-1 shadow-sm hover:shadow-xl cursor-pointer">
-              <svg class="w-8 h-8 mx-auto mb-3 text-[#C9A96E] group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-              </svg>
-              <p class="text-sm font-medium text-[#1a1a1a] group-hover:text-white transition-colors font-['Montserrat']">Moodboards</p>
+
+            <!-- Moodboards -->
+            <div class="group relative h-56 rounded-2xl overflow-hidden cursor-pointer">
+              <img src="https://images.pexels.com/photos/5717411/pexels-photo-5717411.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Moodboards" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+              <div class="absolute inset-0 bg-gradient-to-t from-[#1a1a1a]/90 via-[#1a1a1a]/50 to-transparent"></div>
+              <div class="absolute inset-0 flex flex-col items-center justify-end p-5">
+                <svg class="w-8 h-8 text-[#C9A96E] mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                </svg>
+                <p class="text-sm font-medium text-white font-['Montserrat']">Moodboards</p>
+              </div>
             </div>
-            <div class="group bg-white rounded-2xl p-6 text-center hover:bg-[#C9A96E] transition-all duration-300 hover:-translate-y-1 shadow-sm hover:shadow-xl cursor-pointer">
-              <svg class="w-8 h-8 mx-auto mb-3 text-[#C9A96E] group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
-              </svg>
-              <p class="text-sm font-medium text-[#1a1a1a] group-hover:text-white transition-colors font-['Montserrat']">Color</p>
+
+            <!-- Color -->
+            <div class="group relative h-56 rounded-2xl overflow-hidden cursor-pointer">
+              <img src="https://images.pexels.com/photos/1509534/pexels-photo-1509534.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Color" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+              <div class="absolute inset-0 bg-gradient-to-t from-[#1a1a1a]/90 via-[#1a1a1a]/50 to-transparent"></div>
+              <div class="absolute inset-0 flex flex-col items-center justify-end p-5">
+                <svg class="w-8 h-8 text-[#C9A96E] mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
+                </svg>
+                <p class="text-sm font-medium text-white font-['Montserrat']">Color</p>
+              </div>
             </div>
-            <div class="group bg-white rounded-2xl p-6 text-center hover:bg-[#C9A96E] transition-all duration-300 hover:-translate-y-1 shadow-sm hover:shadow-xl cursor-pointer">
-              <svg class="w-8 h-8 mx-auto mb-3 text-[#C9A96E] group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14.121 14.121L19 19m-7-7l7-7m-7 7l-2.879 2.879M12 12L9.121 9.121m0 5.758a3 3 0 10-4.243 4.243 3 3 0 004.243-4.243zm0-5.758a3 3 0 10-4.243-4.243 3 3 0 004.243 4.243z" />
-              </svg>
-              <p class="text-sm font-medium text-[#1a1a1a] group-hover:text-white transition-colors font-['Montserrat']">Patronaje</p>
+
+            <!-- Patronaje -->
+            <div class="group relative h-56 rounded-2xl overflow-hidden cursor-pointer">
+              <img src="https://images.pexels.com/photos/4210860/pexels-photo-4210860.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Patronaje" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+              <div class="absolute inset-0 bg-gradient-to-t from-[#1a1a1a]/90 via-[#1a1a1a]/50 to-transparent"></div>
+              <div class="absolute inset-0 flex flex-col items-center justify-end p-5">
+                <svg class="w-8 h-8 text-[#C9A96E] mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14.121 14.121L19 19m-7-7l7-7m-7 7l-2.879 2.879M12 12L9.121 9.121m0 5.758a3 3 0 10-4.243 4.243 3 3 0 004.243-4.243zm0-5.758a3 3 0 10-4.243-4.243 3 3 0 004.243 4.243z" />
+                </svg>
+                <p class="text-sm font-medium text-white font-['Montserrat']">Patronaje</p>
+              </div>
             </div>
-            <div class="group bg-white rounded-2xl p-6 text-center hover:bg-[#C9A96E] transition-all duration-300 hover:-translate-y-1 shadow-sm hover:shadow-xl cursor-pointer">
-              <svg class="w-8 h-8 mx-auto mb-3 text-[#C9A96E] group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
-              </svg>
-              <p class="text-sm font-medium text-[#1a1a1a] group-hover:text-white transition-colors font-['Montserrat']">Confección</p>
+
+            <!-- Confección -->
+            <div class="group relative h-56 rounded-2xl overflow-hidden cursor-pointer">
+              <img src="https://images.pexels.com/photos/4210857/pexels-photo-4210857.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Confección" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+              <div class="absolute inset-0 bg-gradient-to-t from-[#1a1a1a]/90 via-[#1a1a1a]/50 to-transparent"></div>
+              <div class="absolute inset-0 flex flex-col items-center justify-end p-5">
+                <svg class="w-8 h-8 text-[#C9A96E] mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                </svg>
+                <p class="text-sm font-medium text-white font-['Montserrat']">Confección</p>
+              </div>
             </div>
-            <div class="group bg-white rounded-2xl p-6 text-center hover:bg-[#C9A96E] transition-all duration-300 hover:-translate-y-1 shadow-sm hover:shadow-xl cursor-pointer">
-              <svg class="w-8 h-8 mx-auto mb-3 text-[#C9A96E] group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-              </svg>
-              <p class="text-sm font-medium text-[#1a1a1a] group-hover:text-white transition-colors font-['Montserrat']">Tendencias</p>
+
+            <!-- Tendencias -->
+            <div class="group relative h-56 rounded-2xl overflow-hidden cursor-pointer">
+              <img src="https://images.pexels.com/photos/3965545/pexels-photo-3965545.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Tendencias" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+              <div class="absolute inset-0 bg-gradient-to-t from-[#1a1a1a]/90 via-[#1a1a1a]/50 to-transparent"></div>
+              <div class="absolute inset-0 flex flex-col items-center justify-end p-5">
+                <svg class="w-8 h-8 text-[#C9A96E] mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+                <p class="text-sm font-medium text-white font-['Montserrat']">Tendencias</p>
+              </div>
             </div>
-            <div class="group bg-white rounded-2xl p-6 text-center hover:bg-[#C9A96E] transition-all duration-300 hover:-translate-y-1 shadow-sm hover:shadow-xl cursor-pointer">
-              <svg class="w-8 h-8 mx-auto mb-3 text-[#C9A96E] group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.53 16.122a3 3 0 00-5.78 1.128 2.25 2.25 0 01-2.4 2.245 4.5 4.5 0 008.4-2.245c0-.399-.078-.78-.22-1.128zm0 0a15.998 15.998 0 003.388-1.62m-5.043-.025a15.994 15.994 0 011.622-3.395m3.42 3.42a15.995 15.995 0 004.764-4.648l3.876-5.814a1.151 1.151 0 00-1.597-1.597L14.146 6.32a15.996 15.996 0 00-4.649 4.763m3.42 3.42a6.776 6.776 0 00-3.42-3.42" />
-              </svg>
-              <p class="text-sm font-medium text-[#1a1a1a] group-hover:text-white transition-colors font-['Montserrat']">Conceptos</p>
+
+            <!-- Conceptos -->
+            <div class="group relative h-56 rounded-2xl overflow-hidden cursor-pointer">
+              <img src="https://images.pexels.com/photos/6373478/pexels-photo-6373478.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Conceptos" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+              <div class="absolute inset-0 bg-gradient-to-t from-[#1a1a1a]/90 via-[#1a1a1a]/50 to-transparent"></div>
+              <div class="absolute inset-0 flex flex-col items-center justify-end p-5">
+                <svg class="w-8 h-8 text-[#C9A96E] mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.53 16.122a3 3 0 00-5.78 1.128 2.25 2.25 0 01-2.4 2.245 4.5 4.5 0 008.4-2.245c0-.399-.078-.78-.22-1.128zm0 0a15.998 15.998 0 003.388-1.62m-5.043-.025a15.994 15.994 0 011.622-3.395m3.42 3.42a15.995 15.995 0 004.764-4.648l3.876-5.814a1.151 1.151 0 00-1.597-1.597L14.146 6.32a15.996 15.996 0 00-4.649 4.763m3.42 3.42a6.776 6.776 0 00-3.42-3.42" />
+                </svg>
+                <p class="text-sm font-medium text-white font-['Montserrat']">Conceptos</p>
+              </div>
             </div>
-            <div class="group bg-white rounded-2xl p-6 text-center hover:bg-[#C9A96E] transition-all duration-300 hover:-translate-y-1 shadow-sm hover:shadow-xl cursor-pointer">
-              <svg class="w-8 h-8 mx-auto mb-3 text-[#C9A96E] group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-              </svg>
-              <p class="text-sm font-medium text-[#1a1a1a] group-hover:text-white transition-colors font-['Montserrat']">Detalle</p>
+
+            <!-- Detalle -->
+            <div class="group relative h-56 rounded-2xl overflow-hidden cursor-pointer">
+              <img src="https://images.pexels.com/photos/5699861/pexels-photo-5699861.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Detalle" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+              <div class="absolute inset-0 bg-gradient-to-t from-[#1a1a1a]/90 via-[#1a1a1a]/50 to-transparent"></div>
+              <div class="absolute inset-0 flex flex-col items-center justify-end p-5">
+                <svg class="w-8 h-8 text-[#C9A96E] mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+                <p class="text-sm font-medium text-white font-['Montserrat']">Detalle</p>
+              </div>
             </div>
-            <div class="group bg-white rounded-2xl p-6 text-center hover:bg-[#C9A96E] transition-all duration-300 hover:-translate-y-1 shadow-sm hover:shadow-xl cursor-pointer">
-              <svg class="w-8 h-8 mx-auto mb-3 text-[#C9A96E] group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-.474-.065 4.48 4.48 0 00.978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z" />
-              </svg>
-              <p class="text-sm font-medium text-[#1a1a1a] group-hover:text-white transition-colors font-['Montserrat']">Comunicación</p>
+
+            <!-- Comunicación -->
+            <div class="group relative h-56 rounded-2xl overflow-hidden cursor-pointer">
+              <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Comunicación" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+              <div class="absolute inset-0 bg-gradient-to-t from-[#1a1a1a]/90 via-[#1a1a1a]/50 to-transparent"></div>
+              <div class="absolute inset-0 flex flex-col items-center justify-end p-5">
+                <svg class="w-8 h-8 text-[#C9A96E] mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-.474-.065 4.48 4.48 0 00.978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z" />
+                </svg>
+                <p class="text-sm font-medium text-white font-['Montserrat']">Comunicación</p>
+              </div>
             </div>
           </div>
         </div>
