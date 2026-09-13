@@ -16,7 +16,7 @@ import Footer from '../components/Footer.astro';
           id="hero-image"
           src="https://images.pexels.com/photos/7679725/pexels-photo-7679725.jpeg?auto=compress&cs=tinysrgb&w=1920" 
           alt="Fashion design studio with sketches" 
-          class="w-full h-[120%] object-cover opacity-50 will-change-transform"
+          class="w-full h-[120%] object-cover object-center opacity-50 will-change-transform"
           loading="eager"
         />
       </div>
@@ -25,27 +25,27 @@ import Footer from '../components/Footer.astro';
         <div class="max-w-2xl">
           <div class="flex items-center gap-3 mb-6">
             <div class="w-12 h-[2px] bg-[#C9A96E]"></div>
-            <p class="text-[#C9A96E] font-['Montserrat'] text-xs tracking-[0.4em] uppercase font-medium">Estudiante de Diseño de Modas</p>
+            <p style="color: #C9A96E;" class="font-['Montserrat'] text-sm tracking-[0.4em] uppercase font-medium">Estudiante de Diseño de Modas</p>
           </div>
           
           <h1 class="font-['Cormorant'] text-5xl md:text-7xl lg:text-8xl font-bold leading-[0.95] mb-8">
-            <span class="text-white">Creando</span>
-            <span class="block text-[#C9A96E] italic">Moda</span>
-            <span class="block text-white">con Identidad</span>
+            <span style="color: white;">Creando</span>
+            <span style="color: #C9A96E;" class="block italic">Moda</span>
+            <span style="color: white;" class="block">con Identidad</span>
           </h1>
           
-          <p class="text-white/70 text-lg leading-relaxed mb-10 max-w-lg font-['Montserrat']">
+          <p style="color: rgba(255,255,255,0.7);" class="text-lg leading-relaxed mb-10 max-w-lg font-['Montserrat']">
             Apasionada por el diseño, el patronaje y la creación de propuestas de vestuario que fusionan creatividad, funcionalidad y tendencia.
           </p>
           
           <div class="flex flex-wrap gap-4">
-            <a href="#sobre-mi" class="group px-8 py-4 bg-[#C9A96E] text-[#1a1a1a] font-['Montserrat'] font-medium rounded-full hover:bg-white transition-all duration-300 flex items-center gap-2">
+            <a href="#sobre-mi" class="btn-gold group px-8 py-4 bg-[#C9A96E] font-['Montserrat'] font-medium rounded-full flex items-center gap-2" style="color: #1a1a1a;">
               Conóceme
               <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
             </a>
-            <a href="#competencias" class="px-8 py-4 border border-white/30 text-white font-['Montserrat'] font-medium rounded-full hover:bg-white/10 transition-all duration-300">
+            <a href="#competencias" class="btn-outline px-8 py-4 border border-white/30 font-['Montserrat'] font-medium rounded-full" style="color: white;">
               Ver habilidades
             </a>
           </div>
@@ -60,21 +60,44 @@ import Footer from '../components/Footer.astro';
     </section>
 
     <!-- SOBRE MÍ -->
-    <section id="sobre-mi" class="py-32 px-6 bg-white">
+    <section id="sobre-mi" class="py-32 px-6 bg-white reveal">
       <div class="max-w-6xl mx-auto">
         <div class="grid lg:grid-cols-2 gap-16 items-center">
           <!-- Imagen -->
-          <div class="relative">
-            <div class="aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl">
+          <div class="relative pt-4 pr-4 pb-20 md:pt-8 md:pr-8">
+            <div class="absolute inset-x-0 top-0 bottom-12 rounded-[2rem] bg-[#F5F0EB]"></div>
+            <div class="relative aspect-[4/3] rounded-[1.5rem] overflow-hidden shadow-[0_24px_50px_-28px_rgba(26,26,26,0.5)] bg-[#E8E4DF]">
+              <img
+                src="/images/sobre-mi.jpg"
+                alt=""
+                aria-hidden="true"
+                class="absolute inset-0 h-full w-full scale-110 object-cover opacity-45 blur-2xl"
+              />
+              <div class="absolute inset-0 bg-[#E8E4DF]/15"></div>
               <img 
-                src="https://images.pexels.com/photos/5699861/pexels-photo-5699861.jpeg?auto=compress&cs=tinysrgb&w=800" 
-                alt="Fashion design materials and fabric" 
-                class="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                src="/images/sobre-mi.jpg" 
+                alt="Foto personal - Estudiante de Diseño de Modas" 
+                class="relative z-10 w-full h-full object-contain hover:scale-105 transition-transform duration-700"
                 loading="lazy"
               />
+              <div class="absolute inset-0 z-20 bg-gradient-to-t from-[#1a1a1a]/70 via-transparent to-[#1a1a1a]/10"></div>
+              <div class="absolute top-5 left-5 z-30 flex items-center gap-2 rounded-full border border-white/30 bg-[#E8E4DF]/25 px-4 py-2 backdrop-blur-sm">
+                <span class="h-1.5 w-1.5 rounded-full bg-[#C9A96E]"></span>
+                <span style="color: #1a1a1a;" class="font-['Montserrat'] text-[10px] font-medium tracking-[0.22em] uppercase">Mi universo creativo</span>
+              </div>
+              <div class="absolute bottom-5 left-5 right-5 z-30 flex items-end justify-between gap-4">
+                <p class="max-w-[13rem] font-['Cormorant'] text-2xl leading-none text-white md:text-3xl">Diseñar con intención.</p>
+                <span class="font-['Montserrat'] text-[10px] tracking-[0.2em] text-white/80 uppercase">01 / 04</span>
+              </div>
             </div>
-            <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-[#F5F0EB] rounded-2xl -z-10"></div>
-            <div class="absolute -top-6 -left-6 w-24 h-24 border-2 border-[#C9A96E] rounded-2xl -z-10"></div>
+            <div class="absolute bottom-0 right-0 flex items-center gap-3 rounded-2xl border border-[#E8E4DF] bg-white px-4 py-3 shadow-lg shadow-[#1a1a1a]/5">
+              <div class="flex h-9 w-9 items-center justify-center rounded-xl bg-[#C9A96E] text-lg text-white">✦</div>
+              <div>
+                <p class="font-['Montserrat'] text-[10px] font-medium tracking-[0.16em] text-[#C9A96E] uppercase">Moda</p>
+                <p class="font-['Cormorant'] text-lg font-semibold leading-none text-[#1a1a1a]">en evolución</p>
+              </div>
+            </div>
+            <div aria-hidden="true" class="absolute -top-2 left-8 font-['Cormorant'] text-7xl leading-none text-[#C9A96E]/25 md:text-8xl">01</div>
           </div>
 
           <!-- Contenido -->
@@ -89,10 +112,10 @@ import Footer from '../components/Footer.astro';
             </h2>
             
             <p class="text-[#4a4a4a] text-lg leading-relaxed mb-6 font-['Montserrat']">
-              Soy estudiante de Diseño de Modas, interesada en desarrollar mi creatividad y fortalecer mis conocimientos técnicos en el diseño, patronaje y confección de prendas.
+              Soy estudiante de Diseño de Moda en la CUN, interesada en desarrollar mi creatividad y fortalecer mis conocimientos técnicos en el diseño, patronaje y confección de prendas.
             </p>
             <p class="text-[#4a4a4a] text-lg leading-relaxed mb-8 font-['Montserrat']">
-              Mi área de interés profesional se enfoca en el diseño de moda femenina, la creación de colecciones, la investigación de tendencias y el desarrollo de propuestas inspiradas en las necesidades y tendencias actuales.
+              Durante mi formación he desarrollado bocetos, procesos de maquinaria y fichas técnicas. Mi área de interés profesional se enfoca en el diseño de moda femenina, la creación de colecciones, la investigación de tendencias y el desarrollo de propuestas inspiradas en las necesidades actuales.
             </p>
 
             <!-- Tags -->
@@ -100,22 +123,23 @@ import Footer from '../components/Footer.astro';
               <span class="px-5 py-2.5 bg-[#F5F0EB] text-[#4a4a4a] text-sm rounded-full font-['Montserrat']">Diseño de Moda</span>
               <span class="px-5 py-2.5 bg-[#F5F0EB] text-[#4a4a4a] text-sm rounded-full font-['Montserrat']">Patronaje</span>
               <span class="px-5 py-2.5 bg-[#F5F0EB] text-[#4a4a4a] text-sm rounded-full font-['Montserrat']">Confección</span>
+              <span class="px-5 py-2.5 bg-[#F5F0EB] text-[#4a4a4a] text-sm rounded-full font-['Montserrat']">Fichas Técnicas</span>
               <span class="px-5 py-2.5 bg-[#F5F0EB] text-[#4a4a4a] text-sm rounded-full font-['Montserrat']">Tendencias</span>
             </div>
 
             <!-- Stats -->
             <div class="grid grid-cols-3 gap-6">
               <div class="text-center p-4 bg-[#F5F0EB] rounded-2xl">
-                <p class="font-['Cormorant'] text-3xl font-bold text-[#C9A96E]">10+</p>
-                <p class="text-xs text-[#4a4a4a] mt-1 font-['Montserrat']">Habilidades</p>
+                <p class="font-['Cormorant'] text-2xl font-bold text-[#C9A96E]">CUN</p>
+                <p class="text-xs text-[#4a4a4a] mt-1 font-['Montserrat']">Institución</p>
               </div>
               <div class="text-center p-4 bg-[#F5F0EB] rounded-2xl">
-                <p class="font-['Cormorant'] text-3xl font-bold text-[#C9A96E]">5+</p>
-                <p class="text-xs text-[#4a4a4a] mt-1 font-['Montserrat']">Herramientas</p>
+                <p class="font-['Cormorant'] text-2xl font-bold text-[#C9A96E]">Diseño</p>
+                <p class="text-xs text-[#4a4a4a] mt-1 font-['Montserrat']">de Moda</p>
               </div>
               <div class="text-center p-4 bg-[#F5F0EB] rounded-2xl">
-                <p class="font-['Cormorant'] text-3xl font-bold text-[#C9A96E]">&#8734;</p>
-                <p class="text-xs text-[#4a4a4a] mt-1 font-['Montserrat']">Pasión</p>
+                <p class="font-['Cormorant'] text-2xl font-bold text-[#C9A96E]">Proceso</p>
+                <p class="text-xs text-[#4a4a4a] mt-1 font-['Montserrat']">formativo</p>
               </div>
             </div>
           </div>
@@ -124,7 +148,7 @@ import Footer from '../components/Footer.astro';
     </section>
 
     <!-- COMPETENCIAS -->
-    <section id="competencias" class="py-32 px-6 bg-[#F5F0EB]">
+    <section id="competencias" class="py-32 px-6 bg-[#F5F0EB] reveal">
       <div class="max-w-6xl mx-auto">
         <div class="text-center mb-20">
           <div class="flex items-center justify-center gap-3 mb-4">
@@ -143,7 +167,7 @@ import Footer from '../components/Footer.astro';
           <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
             <!-- Creatividad -->
             <div class="group relative h-56 rounded-2xl overflow-hidden cursor-pointer">
-              <img src="https://images.pexels.com/photos/1762851/pexels-photo-1762851.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Creatividad" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+              <img src="https://images.pexels.com/photos/8527897/pexels-photo-8527897.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Creatividad" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
               <div class="absolute inset-0 bg-gradient-to-t from-[#1a1a1a]/90 via-[#1a1a1a]/50 to-transparent"></div>
               <div class="absolute inset-0 flex flex-col items-center justify-end p-5">
                 <svg class="w-8 h-8 text-[#C9A96E] mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -167,7 +191,7 @@ import Footer from '../components/Footer.astro';
 
             <!-- Moodboards -->
             <div class="group relative h-56 rounded-2xl overflow-hidden cursor-pointer">
-              <img src="https://images.pexels.com/photos/5717411/pexels-photo-5717411.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Moodboards" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+              <img src="https://images.pexels.com/photos/6931845/pexels-photo-6931845.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Moodboards" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
               <div class="absolute inset-0 bg-gradient-to-t from-[#1a1a1a]/90 via-[#1a1a1a]/50 to-transparent"></div>
               <div class="absolute inset-0 flex flex-col items-center justify-end p-5">
                 <svg class="w-8 h-8 text-[#C9A96E] mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -179,7 +203,7 @@ import Footer from '../components/Footer.astro';
 
             <!-- Color -->
             <div class="group relative h-56 rounded-2xl overflow-hidden cursor-pointer">
-              <img src="https://images.pexels.com/photos/1509534/pexels-photo-1509534.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Color" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+              <img src="https://images.pexels.com/photos/593333/pexels-photo-593333.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Color" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
               <div class="absolute inset-0 bg-gradient-to-t from-[#1a1a1a]/90 via-[#1a1a1a]/50 to-transparent"></div>
               <div class="absolute inset-0 flex flex-col items-center justify-end p-5">
                 <svg class="w-8 h-8 text-[#C9A96E] mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -191,7 +215,7 @@ import Footer from '../components/Footer.astro';
 
             <!-- Patronaje -->
             <div class="group relative h-56 rounded-2xl overflow-hidden cursor-pointer">
-              <img src="https://images.pexels.com/photos/4210860/pexels-photo-4210860.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Patronaje" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+              <img src="https://images.pexels.com/photos/9850428/pexels-photo-9850428.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Patronaje" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
               <div class="absolute inset-0 bg-gradient-to-t from-[#1a1a1a]/90 via-[#1a1a1a]/50 to-transparent"></div>
               <div class="absolute inset-0 flex flex-col items-center justify-end p-5">
                 <svg class="w-8 h-8 text-[#C9A96E] mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -203,7 +227,7 @@ import Footer from '../components/Footer.astro';
 
             <!-- Confección -->
             <div class="group relative h-56 rounded-2xl overflow-hidden cursor-pointer">
-              <img src="https://images.pexels.com/photos/4210857/pexels-photo-4210857.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Confección" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+              <img src="https://images.pexels.com/photos/6461151/pexels-photo-6461151.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Confección" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
               <div class="absolute inset-0 bg-gradient-to-t from-[#1a1a1a]/90 via-[#1a1a1a]/50 to-transparent"></div>
               <div class="absolute inset-0 flex flex-col items-center justify-end p-5">
                 <svg class="w-8 h-8 text-[#C9A96E] mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -215,7 +239,7 @@ import Footer from '../components/Footer.astro';
 
             <!-- Tendencias -->
             <div class="group relative h-56 rounded-2xl overflow-hidden cursor-pointer">
-              <img src="https://images.pexels.com/photos/3965545/pexels-photo-3965545.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Tendencias" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+              <img src="https://images.pexels.com/photos/1536619/pexels-photo-1536619.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Tendencias" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
               <div class="absolute inset-0 bg-gradient-to-t from-[#1a1a1a]/90 via-[#1a1a1a]/50 to-transparent"></div>
               <div class="absolute inset-0 flex flex-col items-center justify-end p-5">
                 <svg class="w-8 h-8 text-[#C9A96E] mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -239,7 +263,7 @@ import Footer from '../components/Footer.astro';
 
             <!-- Detalle -->
             <div class="group relative h-56 rounded-2xl overflow-hidden cursor-pointer">
-              <img src="https://images.pexels.com/photos/5699861/pexels-photo-5699861.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Detalle" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+              <img src="https://images.pexels.com/photos/5908326/pexels-photo-5908326.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Detalle" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
               <div class="absolute inset-0 bg-gradient-to-t from-[#1a1a1a]/90 via-[#1a1a1a]/50 to-transparent"></div>
               <div class="absolute inset-0 flex flex-col items-center justify-end p-5">
                 <svg class="w-8 h-8 text-[#C9A96E] mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -316,8 +340,173 @@ import Footer from '../components/Footer.astro';
       </div>
     </section>
 
+    <!-- PROCESO FORMATIVO -->
+    <section id="proceso" class="py-32 px-6 bg-white reveal">
+      <div class="max-w-6xl mx-auto">
+        <div class="max-w-2xl mb-16">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-12 h-[2px] bg-[#C9A96E]"></div>
+            <p class="text-[#C9A96E] font-['Montserrat'] text-xs tracking-[0.3em] uppercase font-medium">Evidencias reales</p>
+          </div>
+          <h2 class="font-['Cormorant'] text-4xl md:text-5xl font-bold text-[#1a1a1a] mb-5">
+            Mi proceso <span class="italic text-[#C9A96E]">formativo</span>
+          </h2>
+          <p class="text-[#4a4a4a] text-lg leading-relaxed font-['Montserrat']">
+            Una selección de ejercicios desarrollados durante mi formación en Diseño de Moda: investigación visual, bocetos, patronaje y confección.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-6">
+
+          <!-- COL1 Row1: Diario visual -->
+          <article class="group p-3 md:p-4 rounded-3xl bg-[#F5F0EB] md:row-span-1">
+            <div class="relative overflow-hidden rounded-2xl bg-[#E8E4DF]">
+              <img src="/images/evidencias/WhatsApp%20Image%202026-09-12%20at%2011.16.17%20PM.jpeg" alt="Diario visual de diseño de moda" class="cursor-image w-full h-72 md:h-64 object-cover object-center transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+              <div class="absolute inset-0 bg-gradient-to-t from-[#1a1a1a]/80 via-[#1a1a1a]/30 to-transparent"></div>
+              <div class="absolute bottom-0 left-0 right-0 p-5 md:p-6" style="color: white;">
+                <p style="color: #C9A96E;" class="font-['Montserrat'] text-sm tracking-[0.2em] uppercase mb-1.5">Investigación visual</p>
+                <h3 style="color: white;" class="font-['Cormorant'] text-2xl md:text-3xl font-bold mb-1">Diario visual</h3>
+                <p style="color: white;" class="text-xs leading-relaxed font-['Montserrat']">Exploración de referencias, elementos visuales y una identidad creativa personal.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- COL2 Row1: Moodboard naturaleza -->
+          <article class="group p-3 md:p-4 rounded-3xl bg-[#F5F0EB] md:row-span-2">
+            <div class="relative overflow-hidden rounded-2xl bg-[#E8E4DF] h-full">
+              <img src="/images/evidencias/WhatsApp%20Image%202026-09-12%20at%2011.16.32%20PM.jpeg" alt="Moodboard de naturaleza y texturas" class="cursor-image w-full h-72 md:h-full object-cover object-center transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+              <div class="absolute inset-0 bg-gradient-to-t from-[#1a1a1a]/80 via-[#1a1a1a]/30 to-transparent"></div>
+              <div class="absolute bottom-0 left-0 right-0 p-5 md:p-6">
+                <p style="color: #C9A96E;" class="font-['Montserrat'] text-sm tracking-[0.2em] uppercase mb-1.5">Investigación visual</p>
+                <h3 style="color: white;" class="font-['Cormorant'] text-2xl md:text-3xl font-bold mb-1">Moodboard naturaleza</h3>
+                <p style="color: white;" class="text-xs leading-relaxed font-['Montserrat']">Collage de texturas, colores y elementos orgánicos como fuente de inspiración.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- COL3 Row1: Khakiwear -->
+          <article class="group p-3 md:p-4 rounded-3xl bg-[#F5F0EB] md:row-span-2">
+            <div class="relative overflow-hidden rounded-2xl bg-[#E8E4DF] h-full">
+              <img src="/images/evidencias/WhatsApp%20Image%202026-09-12%20at%2011.16.58%20PM.jpeg" alt="Moodboard Universo Khakiwear" class="cursor-image w-full h-72 md:h-full object-cover object-center transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+              <div class="absolute inset-0 bg-gradient-to-t from-[#1a1a1a]/80 via-[#1a1a1a]/30 to-transparent"></div>
+              <div class="absolute bottom-0 left-0 right-0 p-5 md:p-6">
+                <p style="color: #C9A96E;" class="font-['Montserrat'] text-sm tracking-[0.2em] uppercase mb-1.5">Inspiración</p>
+                <h3 style="color: white;" class="font-['Cormorant'] text-2xl md:text-3xl font-bold mb-1">Universo Khakiwear</h3>
+                <p style="color: white;" class="text-xs leading-relaxed font-['Montserrat']">Concepto de estilo inspirado en lo militar, la exploración y la conexión con la naturaleza.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- COL1 Row2: Primer boceto -->
+          <article class="group p-3 md:p-4 rounded-3xl bg-[#F5F0EB] md:row-span-1">
+            <div class="relative overflow-hidden rounded-2xl bg-[#E8E4DF]">
+              <img src="/images/evidencias/WhatsApp%20Image%202026-09-12%20at%2011.13.11%20PM.jpeg" alt="Boceto a lápiz de conjunto de vestuario" class="cursor-image w-full h-72 md:h-64 object-cover object-center transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+              <div class="absolute inset-0 bg-gradient-to-t from-[#1a1a1a]/80 via-[#1a1a1a]/30 to-transparent"></div>
+              <div class="absolute bottom-0 left-0 right-0 p-5 md:p-6">
+                <p style="color: #C9A96E;" class="font-['Montserrat'] text-sm tracking-[0.2em] uppercase mb-1.5">Inspiración</p>
+                <h3 style="color: white;" class="font-['Cormorant'] text-2xl md:text-3xl font-bold mb-1">Primer boceto</h3>
+                <p style="color: white;" class="text-xs leading-relaxed font-['Montserrat']">Delantero y posterior de un conjunto funcional con detalles utilitarios.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- COL1 Row3: Vestido rosa (tall) -->
+          <article class="group p-3 md:p-4 rounded-3xl bg-[#F5F0EB] md:row-span-2">
+            <div class="relative overflow-hidden rounded-2xl bg-[#E8E4DF] h-full">
+              <img src="/images/evidencias/WhatsApp%20Image%202026-09-12%20at%2011.13.11%20PM%20(1).jpeg" alt="Boceto a color de vestido rosa largo" class="cursor-image w-full h-72 md:h-full object-cover object-center transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+              <div class="absolute inset-0 bg-gradient-to-t from-[#1a1a1a]/80 via-[#1a1a1a]/30 to-transparent"></div>
+              <div class="absolute bottom-0 left-0 right-0 p-5 md:p-6">
+                <p style="color: #C9A96E;" class="font-['Montserrat'] text-sm tracking-[0.2em] uppercase mb-1.5">Diseño</p>
+                <h3 style="color: white;" class="font-['Cormorant'] text-2xl md:text-3xl font-bold mb-1">Vestido rosa acuarela</h3>
+                <p style="color: white;" class="text-xs leading-relaxed font-['Montserrat']">Diseño de vestido largo con mangas voluminosas y cierre frontal en tonos rosa.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- COL2 Row2: Abrigo -->
+          <article class="group p-3 md:p-4 rounded-3xl bg-[#F5F0EB] md:row-span-1">
+            <div class="relative overflow-hidden rounded-2xl bg-[#E8E4DF]">
+              <img src="/images/evidencias/WhatsApp%20Image%202026-09-12%20at%2011.17.41%20PM.jpeg" alt="Boceto de abrigo largo delantero y posterior" class="cursor-image w-full h-72 md:h-64 object-cover object-center transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+              <div class="absolute inset-0 bg-gradient-to-t from-[#1a1a1a]/80 via-[#1a1a1a]/30 to-transparent"></div>
+              <div class="absolute bottom-0 left-0 right-0 p-5 md:p-6">
+                <p style="color: #C9A96E;" class="font-['Montserrat'] text-sm tracking-[0.2em] uppercase mb-1.5">Diseño</p>
+                <h3 style="color: white;" class="font-['Cormorant'] text-2xl md:text-3xl font-bold mb-1">Abrigo tonos tierra</h3>
+                <p style="color: white;" class="text-xs leading-relaxed font-['Montserrat']">Pieza exterior con cierre frontal, mangas ajustadas y silueta recta.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- COL1 Row4: Vestido utilitario -->
+          <article class="group p-3 md:p-4 rounded-3xl bg-[#F5F0EB] md:row-span-1">
+            <div class="relative overflow-hidden rounded-2xl bg-[#E8E4DF]">
+              <img src="/images/evidencias/WhatsApp%20Image%202026-09-12%20at%2011.18.11%20PM.jpeg" alt="Boceto de vestido tipo khaki con cinturón" class="cursor-image w-full h-72 md:h-64 object-cover object-center transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+              <div class="absolute inset-0 bg-gradient-to-t from-[#1a1a1a]/80 via-[#1a1a1a]/30 to-transparent"></div>
+              <div class="absolute bottom-0 left-0 right-0 p-5 md:p-6">
+                <p style="color: #C9A96E;" class="font-['Montserrat'] text-sm tracking-[0.2em] uppercase mb-1.5">Diseño</p>
+                <h3 style="color: white;" class="font-['Cormorant'] text-2xl md:text-3xl font-bold mb-1">Vestido utilitario</h3>
+                <p style="color: white;" class="text-xs leading-relaxed font-['Montserrat']">Vestido camisero con cinturón verde, bolsillos y detalles militares.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- COL2 Row3: Vestido largo -->
+          <article class="group p-3 md:p-4 rounded-3xl bg-[#F5F0EB] md:row-span-2">
+            <div class="relative overflow-hidden rounded-2xl bg-[#E8E4DF] h-full">
+              <img src="/images/evidencias/WhatsApp%20Image%202026-09-12%20at%2011.18.35%20PM.jpeg" alt="Boceto de vestido largo con cinturón rosa" class="cursor-image w-full h-72 md:h-full object-cover object-center transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+              <div class="absolute inset-0 bg-gradient-to-t from-[#1a1a1a]/80 via-[#1a1a1a]/30 to-transparent"></div>
+              <div class="absolute bottom-0 left-0 right-0 p-5 md:p-6">
+                <p style="color: #C9A96E;" class="font-['Montserrat'] text-sm tracking-[0.2em] uppercase mb-1.5">Diseño</p>
+                <h3 style="color: white;" class="font-['Cormorant'] text-2xl md:text-3xl font-bold mb-1">Vestido largo</h3>
+                <p style="color: white;" class="text-xs leading-relaxed font-['Montserrat']">Propuesta con cinturón rosa, mangas y silueta amplia hasta el tobillo.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- COL3 Row3: Patronaje base -->
+          <article class="group p-3 md:p-4 rounded-3xl bg-[#F5F0EB] md:row-span-1">
+            <div class="relative overflow-hidden rounded-2xl bg-[#E8E4DF]">
+              <img src="/images/evidencias/WhatsApp%20Image%202026-09-12%20at%2011.15.22%20PM.jpeg" alt="Patronaje base delantero y posterior en pizarra" class="cursor-image w-full h-72 md:h-64 object-cover object-center transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+              <div class="absolute inset-0 bg-gradient-to-t from-[#1a1a1a]/80 via-[#1a1a1a]/30 to-transparent"></div>
+              <div class="absolute bottom-0 left-0 right-0 p-5 md:p-6">
+                <p style="color: #C9A96E;" class="font-['Montserrat'] text-sm tracking-[0.2em] uppercase mb-1.5">Patronaje</p>
+                <h3 style="color: white;" class="font-['Cormorant'] text-2xl md:text-3xl font-bold mb-1">Base delantero y posterior</h3>
+                <p style="color: white;" class="text-xs leading-relaxed font-['Montserrat']">Trazo técnico con medidas de busto, cintura, cadera y contornos de sisa.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- COL1 Row5: Patronaje falda -->
+          <article class="group p-3 md:p-4 rounded-3xl bg-[#F5F0EB] md:row-span-1">
+            <div class="relative overflow-hidden rounded-2xl bg-[#E8E4DF]">
+              <img src="/images/evidencias/WhatsApp%20Image%202026-09-12%20at%2011.15.22%20PM%20(1).jpeg" alt="Patronaje de falda básica en pizarra" class="cursor-image w-full h-72 md:h-64 object-cover object-center transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+              <div class="absolute inset-0 bg-gradient-to-t from-[#1a1a1a]/80 via-[#1a1a1a]/30 to-transparent"></div>
+              <div class="absolute bottom-0 left-0 right-0 p-5 md:p-6">
+                <p style="color: #C9A96E;" class="font-['Montserrat'] text-sm tracking-[0.2em] uppercase mb-1.5">Patronaje</p>
+                <h3 style="color: white;" class="font-['Cormorant'] text-2xl md:text-3xl font-bold mb-1">Falda básica T8</h3>
+                <p style="color: white;" class="text-xs leading-relaxed font-['Montserrat']">Delantero y espalda con pinzas, corte a ray y largo total.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- COL2 Row4: Confección -->
+          <article class="group p-3 md:p-4 rounded-3xl bg-[#F5F0EB] md:row-span-1">
+            <div class="relative overflow-hidden rounded-2xl bg-[#E8E4DF]">
+              <img src="/images/evidencias/WhatsApp%20Image%202026-09-12%20at%2011.15.21%20PM.jpeg" alt="Prenda blanca confeccionada durante el proceso formativo" class="cursor-image w-full h-72 md:h-64 object-cover object-center transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+              <div class="absolute inset-0 bg-gradient-to-t from-[#1a1a1a]/80 via-[#1a1a1a]/30 to-transparent"></div>
+              <div class="absolute bottom-0 left-0 right-0 p-5 md:p-6">
+                <p style="color: #C9A96E;" class="font-['Montserrat'] text-sm tracking-[0.2em] uppercase mb-1.5">Confección</p>
+                <h3 style="color: white;" class="font-['Cormorant'] text-2xl md:text-3xl font-bold mb-1">Prenda en tela blanca</h3>
+                <p style="color: white;" class="text-xs leading-relaxed font-['Montserrat']">Desarrollo técnico de pieza con costuras limpias y terminaciones.</p>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
     <!-- PROYECCIÓN PROFESIONAL -->
-    <section id="proyeccion" class="py-32 px-6 bg-white relative overflow-hidden">
+    <section id="proyeccion" class="py-32 px-6 bg-white relative overflow-hidden reveal">
       <div class="absolute top-0 right-0 w-96 h-96 bg-[#F5F0EB] rounded-full blur-[150px] opacity-50"></div>
       <div class="absolute bottom-0 left-0 w-96 h-96 bg-[#E8E4DF] rounded-full blur-[150px] opacity-30"></div>
       
@@ -422,6 +611,38 @@ import Footer from '../components/Footer.astro';
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="py-28 px-6 bg-[#1a1a1a] relative overflow-hidden reveal">
+      <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-[#C9A96E]/5 rounded-full blur-[150px]"></div>
+      <div class="max-w-3xl mx-auto text-center relative z-10">
+        <div class="flex items-center justify-center gap-3 mb-4">
+          <div class="w-12 h-[2px] bg-[#C9A96E]"></div>
+          <p class="text-[#C9A96E] font-['Montserrat'] text-xs tracking-[0.3em] uppercase font-medium">Hablemos</p>
+          <div class="w-12 h-[2px] bg-[#C9A96E]"></div>
+        </div>
+        <h2 class="font-['Cormorant'] text-4xl md:text-5xl font-bold text-white mb-6">
+          Trabajemos <span class="italic text-[#C9A96E]">juntos</span>
+        </h2>
+        <p class="text-white/60 text-lg leading-relaxed mb-10 font-['Montserrat'] max-w-xl mx-auto">
+          ¿Tienes un proyecto en mente o quieres conectar? Estoy abierta a colaboraciones, prácticas y nuevas oportunidades en la industria de la moda.
+        </p>
+        <div class="flex flex-wrap items-center justify-center gap-4">
+          <a href="mailto:tu@email.com" class="btn-gold px-8 py-4 bg-[#C9A96E] text-[#1a1a1a] font-['Montserrat'] font-medium rounded-full flex items-center gap-2">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+            Escríbeme
+          </a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="btn-outline px-8 py-4 border border-white/20 text-white font-['Montserrat'] font-medium rounded-full flex items-center gap-2">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+            Instagram
+          </a>
         </div>
       </div>
     </section>
